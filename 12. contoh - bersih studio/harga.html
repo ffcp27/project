@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daftar Harga — Bersih Studio Laundry</title>
+  <meta name="description" content="Daftar harga lengkap Bersih Studio: cuci kiloan mulai Rp 7.000/kg, dry cleaning, sepatu, sprei, dan paket berlangganan bulanan."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="topbar-placeholder"></div>
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="bc-sep">/</span>
+        <span>Harga</span>
+      </div>
+      <span class="sec-label">Daftar Harga</span>
+      <h1 class="sec-title">Harga <em>Transparan</em></h1>
+      <p class="sec-desc" style="margin-top:0.8rem; max-width:500px;">Tidak ada biaya tersembunyi. Semua harga sudah termasuk proses cuci, kering, dan lipat/gantung.</p>
+    </div>
+  </div>
+
+  <!-- HARGA PAKET -->
+  <section class="harga-section">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div style="text-align:center; max-width:560px; margin:0 auto 4rem;">
+        <span class="sec-label reveal">Paket Berlangganan</span>
+        <h2 class="sec-title reveal">Pilih paket yang <em>paling sesuai</em></h2>
+        <p class="sec-desc reveal" style="margin-top:0.8rem;">Semakin sering laundry, semakin hemat. Paket bulanan tersedia dengan harga spesial.</p>
+      </div>
+      <div class="harga-grid">
+
+        <div class="harga-card reveal">
+          <div class="harga-icon">🧺</div>
+          <div class="harga-name">Reguler</div>
+          <div class="harga-price">Rp 7.000</div>
+          <div class="harga-unit">per kilogram · 1–2 hari kerja</div>
+          <div class="harga-features">
+            <div class="hf"><div class="hf-check">✓</div> Cuci + kering + lipat</div>
+            <div class="hf"><div class="hf-check">✓</div> Deterjen premium</div>
+            <div class="hf"><div class="hf-check">✓</div> Min. order 2 kg</div>
+            <div class="hf"><div class="hf-check">✓</div> Notifikasi WA</div>
+            <div class="hf"><div class="hf-check">✓</div> Antar-jemput tersedia</div>
+          </div>
+          <button class="btn-outline" onclick="orderLayanan('Paket Reguler')">Pilih Reguler</button>
+        </div>
+
+        <div class="harga-card popular reveal">
+          <span class="popular-badge">🔥 Terpopuler</span>
+          <div class="harga-icon">⚡</div>
+          <div class="harga-name">Express</div>
+          <div class="harga-price">Rp 12.000</div>
+          <div class="harga-unit">per kilogram · selesai 3 jam</div>
+          <div class="harga-features">
+            <div class="hf"><div class="hf-check">✓</div> Prioritas antrian</div>
+            <div class="hf"><div class="hf-check">✓</div> Cuci + kering + lipat</div>
+            <div class="hf"><div class="hf-check">✓</div> Berlaku 07.00–17.00</div>
+            <div class="hf"><div class="hf-check">✓</div> Notifikasi real-time</div>
+            <div class="hf"><div class="hf-check">✓</div> Antar-jemput tersedia</div>
+          </div>
+          <button class="btn-white" onclick="orderLayanan('Paket Express')">⚡ Pilih Express</button>
+        </div>
+
+        <div class="harga-card reveal">
+          <div class="harga-icon">📅</div>
+          <div class="harga-name">Member Bulanan</div>
+          <div class="harga-price">Rp 180.000</div>
+          <div class="harga-unit">per bulan · 30 kg laundry</div>
+          <div class="harga-features">
+            <div class="hf"><div class="hf-check">✓</div> 30 kg/bulan (reguler)</div>
+            <div class="hf"><div class="hf-check">✓</div> Antar-jemput gratis</div>
+            <div class="hf"><div class="hf-check">✓</div> Diskon 10% express</div>
+            <div class="hf"><div class="hf-check">✓</div> Prioritas pelanggan</div>
+            <div class="hf"><div class="hf-check">✓</div> Hemat ~18% vs eceran</div>
+          </div>
+          <button class="btn-outline" onclick="orderLayanan('Paket Member Bulanan')">Daftar Member</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HARGA LENGKAP TABLE -->
+  <section style="padding:0 3rem 7rem; background:var(--white);">
+    <div style="max-width:1200px; margin:0 auto;">
+
+      <div style="text-align:center; max-width:540px; margin:0 auto 3.5rem;">
+        <span class="sec-label reveal">Daftar Lengkap</span>
+        <h2 class="sec-title reveal">Semua harga <em>detail</em></h2>
+      </div>
+
+      <!-- CUCI KILOAN -->
+      <div style="margin-bottom:3rem;" class="reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;padding-bottom:0.8rem;border-bottom:2px solid rgba(26,108,242,0.1);">
+          <div style="font-size:1.8rem;">👕</div>
+          <div style="font-family:'Nunito',sans-serif;font-size:1.2rem;font-weight:800;color:var(--navy);">Cuci Kiloan</div>
+        </div>
+        <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;">
+            <thead>
+              <tr style="background:var(--blue-bg);">
+                <th style="padding:0.8rem 1.2rem;text-align:left;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);border-radius:0;">Layanan</th>
+                <th style="padding:0.8rem 1.2rem;text-align:left;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Estimasi Waktu</th>
+                <th style="padding:0.8rem 1.2rem;text-align:right;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(26,108,242,0.06);">
+                <td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Cuci Reguler (Cuci + Kering + Lipat)</td>
+                <td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">1–2 hari kerja</td>
+                <td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 7.000/kg</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(26,108,242,0.06);">
+                <td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Cuci Express (Selesai 3 Jam)</td>
+                <td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">3 jam (07.00–17.00)</td>
+                <td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 12.000/kg</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(26,108,242,0.06);">
+                <td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Cuci + Setrika</td>
+                <td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">2 hari kerja</td>
+                <td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 9.000/kg</td>
+              </tr>
+              <tr>
+                <td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Setrika Saja</td>
+                <td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">1 hari kerja</td>
+                <td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 4.000/kg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DRY CLEANING -->
+      <div style="margin-bottom:3rem;" class="reveal">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;padding-bottom:0.8rem;border-bottom:2px solid rgba(26,108,242,0.1);">
+          <div style="font-size:1.8rem;">✨</div>
+          <div style="font-family:'Nunito',sans-serif;font-size:1.2rem;font-weight:800;color:var(--navy);">Dry Cleaning</div>
+        </div>
+        <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;">
+            <thead>
+              <tr style="background:var(--blue-bg);">
+                <th style="padding:0.8rem 1.2rem;text-align:left;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Item</th>
+                <th style="padding:0.8rem 1.2rem;text-align:left;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Estimasi Waktu</th>
+                <th style="padding:0.8rem 1.2rem;text-align:right;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);">Harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(26,108,242,0.06);"><td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Kemeja / Baju Biasa</td><td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">2–3 hari kerja</td><td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 25.000</td></tr>
+              <tr style="border-bottom:1px solid rgba(26,108,242,0.06);"><td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Jas / Blazer</td><td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">2–3 hari kerja</td><td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 55.000</td></tr>
+              <tr style="border-bottom:1px solid rgba(26,108,242,0.06);"><td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Gaun / Dress Panjang</td><td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">3–5 hari kerja</td><td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 75.000</td></tr>
+              <tr style="border-bottom:1px solid rgba(26,108,242,0.06);"><td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Kebaya / Baju Adat</td><td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">3–5 hari kerja</td><td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Rp 85.000</td></tr>
+              <tr><td style="padding:1rem 1.2rem;font-size:0.9rem;color:var(--text-body);">Gaun Pengantin</td><td style="padding:1rem 1.2rem;font-size:0.85rem;color:var(--text-muted);">5–7 hari kerja</td><td style="padding:1rem 1.2rem;text-align:right;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:800;color:var(--blue);">Hubungi Kami</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SEPATU & SPREI -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;" class="reveal">
+        <div>
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;padding-bottom:0.8rem;border-bottom:2px solid rgba(26,108,242,0.1);">
+            <div style="font-size:1.8rem;">👟</div>
+            <div style="font-family:'Nunito',sans-serif;font-size:1.2rem;font-weight:800;color:var(--navy);">Cuci Sepatu</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;">
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;border-bottom:1px solid rgba(26,108,242,0.06);font-size:0.88rem;"><span style="color:var(--text-body);">Sneakers / Casual</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 25.000</span></div>
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;border-bottom:1px solid rgba(26,108,242,0.06);font-size:0.88rem;"><span style="color:var(--text-body);">Sepatu Formal / Pantofel</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 30.000</span></div>
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;border-bottom:1px solid rgba(26,108,242,0.06);font-size:0.88rem;"><span style="color:var(--text-body);">Sepatu Boots</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 40.000</span></div>
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;font-size:0.88rem;"><span style="color:var(--text-body);">Sepatu Bayi / Anak</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 18.000</span></div>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;padding-bottom:0.8rem;border-bottom:2px solid rgba(26,108,242,0.1);">
+            <div style="font-size:1.8rem;">🛏️</div>
+            <div style="font-family:'Nunito',sans-serif;font-size:1.2rem;font-weight:800;color:var(--navy);">Sprei & Bedding</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;">
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;border-bottom:1px solid rgba(26,108,242,0.06);font-size:0.88rem;"><span style="color:var(--text-body);">Sprei Single</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 15.000</span></div>
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;border-bottom:1px solid rgba(26,108,242,0.06);font-size:0.88rem;"><span style="color:var(--text-body);">Sprei Double / Queen</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 22.000</span></div>
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;border-bottom:1px solid rgba(26,108,242,0.06);font-size:0.88rem;"><span style="color:var(--text-body);">Bed Cover Single</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 28.000</span></div>
+            <div style="display:flex;justify-content:space-between;padding:0.8rem 0;font-size:0.88rem;"><span style="color:var(--text-body);">Selimut / Blanket</span><span style="font-family:'Nunito',sans-serif;font-weight:800;color:var(--blue);">Rp 25.000</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:var(--blue-bg);border:1.5px solid rgba(26,108,242,0.15);border-radius:16px;padding:1.5rem 2rem;margin-top:2.5rem;display:flex;gap:1rem;align-items:flex-start;" class="reveal">
+        <div style="font-size:1.5rem;flex-shrink:0;">ℹ️</div>
+        <div>
+          <div style="font-family:'Nunito',sans-serif;font-size:0.9rem;font-weight:800;color:var(--navy);margin-bottom:0.3rem;">Catatan Harga</div>
+          <p style="font-size:0.83rem;color:var(--text-muted);line-height:1.7;font-weight:300;">Semua harga sudah termasuk proses cuci, kering, dan lipat/gantung. Antar-jemput gratis untuk area Balaraja (radius 5km). Biaya antar-jemput di luar area Rp 5.000–15.000 tergantung jarak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-img">
+        <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=800&q=85" alt="Pakaian bersih"/>
+      </div>
+      <div>
+        <span class="cta-label">Ada Pertanyaan?</span>
+        <h2 class="cta-title">Konsultasi <em>gratis</em><br>via WhatsApp</h2>
+        <p class="cta-desc">Tanya harga, tanya layanan, atau langsung order — tim kami siap membantu setiap hari dari pagi hingga malam.</p>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn-mint">💬 Chat Sekarang</a>
+          <a href="kontak.html" class="btn-white">Order Pickup →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

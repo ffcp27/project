@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Lengkap — Dapur Rempah</title>
+  <meta name="description" content="Menu lengkap Dapur Rempah: brownies, roti artisan, kue, cookies, mochi, dan pilihan hampers. Semua homemade tanpa pengawet." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1800&q=85" alt="Pastry display" class="page-hero-bg" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="section-label">Katalog Lengkap</span>
+      <h1 class="section-title">Menu <em>Dapur Rempah</em></h1>
+      <p class="section-desc">Semua dipanggang segar setiap hari — tanpa pengawet, tanpa bahan buatan. Pilih favoritmu dan pesan sekarang.</p>
+    </div>
+  </section>
+
+  <!-- MENU FULL -->
+  <section class="menu-full-section">
+    <div class="menu-full-inner">
+
+      <!-- BROWNIES -->
+      <div class="category-section">
+        <div class="cat-header">
+          <span class="cat-icon">🍫</span>
+          <span class="cat-name">Brownies</span>
+          <span class="cat-count">6 Varian</span>
+        </div>
+        <div class="product-list-grid">
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&q=85" alt="Fudgy Brownies" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Brownies Klasik</div>
+              <div class="prod-name">Fudgy Dark Chocolate Brownies</div>
+              <p class="prod-desc">Dense, moist, intensely chocolatey. Valrhona cocoa + dark choco 70%.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 55.000 <span class="per">/ loyang 20×20</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Fudgy Brownies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1617305855058-336d24456869?w=500&q=85" alt="Cream Cheese Brownies" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Brownies Premium</div>
+              <div class="prod-name">Cream Cheese Swirl Brownies</div>
+              <p class="prod-desc">Brownies fudgy dengan lapisan cream cheese yang digulung cantik.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 68.000 <span class="per">/ loyang 20×20</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Cream Cheese Brownies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=500&q=85" alt="Salted Caramel" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Brownies Spesial</div>
+              <div class="prod-name">Salted Caramel Brownies</div>
+              <p class="prod-desc">Brownies dengan drizzle karamel asin homemade. Manis-gurih adiktif.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 72.000 <span class="per">/ loyang 20×20</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Salted Caramel Brownies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=500&q=85" alt="Nutella Brownies" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Brownies Spesial</div>
+              <div class="prod-name">Nutella Stuffed Brownies</div>
+              <p class="prod-desc">Setiap potongan mengungkap isian Nutella leleh di tengahnya. Indulging!</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 78.000 <span class="per">/ loyang 20×20</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Nutella Brownies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=85" alt="Red Velvet Brownies" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Brownies Varian</div>
+              <div class="prod-name">Red Velvet Brownies</div>
+              <p class="prod-desc">Brownies berwarna merah cantik dengan rasa sedikit cokelat dan sentuhan buttermilk.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 65.000 <span class="per">/ loyang 20×20</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Red Velvet Brownies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500&q=85" alt="Matcha Brownies" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Brownies Varian</div>
+              <div class="prod-name">Matcha White Choco Brownies</div>
+              <p class="prod-desc">Blondie matcha premium Jepang dengan white chocolate chip. Earthy dan creamy.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 75.000 <span class="per">/ loyang 20×20</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Matcha Brownies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ROTI & BREAD -->
+      <div class="category-section">
+        <div class="cat-header">
+          <span class="cat-icon">🍞</span>
+          <span class="cat-name">Roti & Artisan Bread</span>
+          <span class="cat-count">5 Varian</span>
+        </div>
+        <div class="product-list-grid">
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=85" alt="Sourdough" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Artisan Bread</div>
+              <div class="prod-name">Classic Sourdough Loaf</div>
+              <p class="prod-desc">Fermentasi 18 jam, kulit renyah, remah terbuka chewy. Tanpa ragi instan.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 65.000 <span class="per">/ loaf</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Sourdough Loaf')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=85" alt="Croissant" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Viennoiserie</div>
+              <div class="prod-name">Butter Croissant</div>
+              <p class="prod-desc">27 lapis, butter Prancis premium. Renyah, flaky, airy dan buttery sempurna.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 18.000 <span class="per">/ pcs</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Butter Croissant')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=500&q=85" alt="Banana Bread" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Sweet Bread</div>
+              <div class="prod-name">Banana Walnut Loaf</div>
+              <p class="prod-desc">Pisang matang, walnut panggang, kayu manis, vanilla. Moist dan aromatik.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 45.000 <span class="per">/ loaf</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Banana Walnut Loaf')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?w=500&q=85" alt="Focaccia" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Artisan Bread</div>
+              <div class="prod-name">Rosemary Olive Oil Focaccia</div>
+              <p class="prod-desc">Focaccia Italia dengan olive oil extra virgin, rosemary segar dan sea salt flakes.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 55.000 <span class="per">/ loyang</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Focaccia')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=500&q=85" alt="Brioche" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Sweet Bread</div>
+              <div class="prod-name">Classic Brioche Loaf</div>
+              <p class="prod-desc">Roti Prancis kaya butter dan telur. Tekstur super lembut dan sedikit manis.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 58.000 <span class="per">/ loaf</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Brioche Loaf')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CAKE & KUE -->
+      <div class="category-section">
+        <div class="cat-header">
+          <span class="cat-icon">🎂</span>
+          <span class="cat-name">Kue & Cake</span>
+          <span class="cat-count">5 Varian</span>
+        </div>
+        <div class="product-list-grid">
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=500&q=85" alt="Basque Cheesecake" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Cheesecake</div>
+              <div class="prod-name">Basque Burnt Cheesecake</div>
+              <p class="prod-desc">Creamy di dalam, karamel di luar. Dibuat tiap pagi. Tersedia slice dan full.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 85.000 <span class="per">/ loyang</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Basque Cheesecake')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?w=500&q=85" alt="Chiffon Cake" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Layer Cake</div>
+              <div class="prod-name">Japanese Soft Chiffon</div>
+              <p class="prod-desc">Kue chiffon Jepang super lembut waterbath. Vanilla, pandan, matcha.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 75.000 <span class="per">/ loaf</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Chiffon Cake')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=85" alt="Carrot Cake" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Spiced Cake</div>
+              <div class="prod-name">Carrot Cake & Cream Cheese</div>
+              <p class="prod-desc">Wortel segar, kayu manis, walnut, cream cheese frosting. Moist dan kaya rasa.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 95.000 <span class="per">/ loyang</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Carrot Cake')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=85" alt="Lemon Pound Cake" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Pound Cake</div>
+              <div class="prod-name">Lemon Drizzle Pound Cake</div>
+              <p class="prod-desc">Pound cake lemony dengan glaze lemon segar yang meresap sempurna.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 70.000 <span class="per">/ loaf</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Lemon Pound Cake')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=500&q=85" alt="Opera Cake" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Premium Cake</div>
+              <div class="prod-name">Tiramisu Layer Cake</div>
+              <p class="prod-desc">Layer cake tiramisu klasik dengan mascarpone, espresso, dan ladyfinger homemade.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 125.000 <span class="per">/ loyang</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Tiramisu Cake')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- COOKIES -->
+      <div class="category-section">
+        <div class="cat-header">
+          <span class="cat-icon">🍪</span>
+          <span class="cat-name">Cookies & Biscuits</span>
+          <span class="cat-count">4 Varian</span>
+        </div>
+        <div class="product-list-grid">
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500&q=85" alt="Choco Chip" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Cookies Klasik</div>
+              <div class="prod-name">NY-Style Choco Chip Cookies</div>
+              <p class="prod-desc">Crispy di luar, chewy di dalam. Dark choco chip + fleur de sel.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 38.000 <span class="per">/ 6 pcs</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Choco Chip Cookies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=500&q=85" alt="Butter Cookies" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Cookies Premium</div>
+              <div class="prod-name">Danish Butter Cookies Tin</div>
+              <p class="prod-desc">Cookies premium dalam kaleng cantik. Cocok hampers. 3 varian rasa.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 85.000 <span class="per">/ tin</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Butter Cookies Tin')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1587536849024-a7f3e09f6ff5?w=500&q=85" alt="Thumbprint" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Cookies Spesial</div>
+              <div class="prod-name">Thumbprint Jam Cookies</div>
+              <p class="prod-desc">Butter cookies dengan selai stroberi atau raspberry homemade. Asam manis.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 42.000 <span class="per">/ 8 pcs</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Thumbprint Cookies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card reveal">
+            <img src="https://images.unsplash.com/photo-1506459225024-1428097a7e18?w=500&q=85" alt="Oatmeal Cookies" class="prod-img" />
+            <div class="prod-body">
+              <div class="prod-cat">Cookies Sehat</div>
+              <div class="prod-name">Oatmeal Raisin Cookies</div>
+              <p class="prod-desc">Rolled oats, raisin juicy, kayu manis. Crispy dan chewy, lebih rendah gula.</p>
+              <div class="prod-footer">
+                <div class="prod-price">Rp 36.000 <span class="per">/ 6 pcs</span></div>
+                <button class="btn-order-mini" onclick="pesanProduk('Oatmeal Cookies')">Pesan</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?w=1920&q=80" alt="Bakery" class="cta-bg" />
+    <div class="cta-content">
+      <span class="section-label">Tidak ada yang kamu cari?</span>
+      <h2>Pesan <em>custom</em> sesuai<br>keinginanmu</h2>
+      <p>Kami menerima custom order rasa, ukuran, dan dekorasi. Hubungi kami minimal H-2 sebelum hari pengambilan.</p>
+      <a href="custom.html" class="btn-primary">🎁 Pesan Custom Sekarang</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

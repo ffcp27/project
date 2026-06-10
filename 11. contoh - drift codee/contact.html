@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order & Contact — Drift Coffee</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div class="page-hero" data-title="CONTACT">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="bc-sep">/</span>
+        <span>Contact</span>
+      </div>
+      <span class="sec-label">Get In Touch</span>
+      <div class="sec-title">ORDER &<br><span class="neon-t">FIND</span><br>US.</div>
+      <p style="font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--ash);margin-top:1rem;max-width:400px;line-height:1.75;">
+        Order ahead via WA, ask us anything, or just show up. We're easy to find, easier to talk to.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="kontak-section">
+    <div class="kontak-inner">
+
+      <!-- LEFT: Info -->
+      <div>
+        <span class="sec-label reveal" style="margin-bottom:1.5rem;display:block;">// Info</span>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">Location</span>
+          <div class="info-block-value">
+            Jl. Drift No. 7<br>
+            Permata Balaraja, Kab. Tangerang<br>
+            Banten 15660
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">Hours</span>
+          <table class="hours-table">
+            <tbody>
+              <tr id="row-weekday">
+                <td>Mon – Fri</td>
+                <td>07:00 – 23:00</td>
+              </tr>
+              <tr id="row-weekend">
+                <td>Sat – Sun</td>
+                <td>08:00 – 24:00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="font-family:'Space Mono',monospace;font-size:0.6rem;color:var(--zinc);margin-top:0.7rem;line-height:1.6;">
+            * Kitchen closes 1 hour before closing time.<br>
+            Cold brew may run out. First come, first served.
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">Phone & WA</span>
+          <div class="info-block-value">
+            <a href="tel:+6281200007777" style="color:var(--smoke);">+62 812-0000-7777</a><br>
+            <span style="font-size:0.68rem;color:var(--zinc);">WA orders accepted 07:00–22:00</span>
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">Email & Social</span>
+          <div class="info-block-value">
+            <a href="mailto:hi@driftcoffee.id" style="color:var(--smoke);">hi@driftcoffee.id</a><br>
+            IG: <strong style="color:var(--neon);">@driftcoffee.id</strong><br>
+            TT: <strong style="color:var(--neon);">@driftcoffee</strong>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div style="background:var(--black-2);border:1px solid rgba(255,255,255,0.07);padding:3rem 2rem;text-align:center;margin-top:0.8rem;font-size:2.5rem;" class="reveal">
+          📍
+          <p style="font-family:'Space Mono',monospace;font-size:0.65rem;color:var(--ash);margin-top:0.5rem;letter-spacing:0.1em;">Jl. Drift No. 7, Permata Balaraja</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-hero-primary" style="display:inline-flex;margin-top:1.2rem;font-size:0.65rem;padding:0.7rem 1.5rem;">Open in Maps</a>
+        </div>
+
+        <!-- Quick action links -->
+        <div style="margin-top:0.8rem;background:var(--black-2);border:1px solid rgba(255,255,255,0.07);padding:1.8rem;" class="reveal">
+          <div style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--neon);opacity:0.7;margin-bottom:1.2rem;">Quick links</div>
+          <div style="display:flex;flex-direction:column;gap:0.6rem;">
+            <a href="https://wa.me/6281200007777" target="_blank" style="font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--smoke);padding:0.75rem 1rem;border:1px solid rgba(255,255,255,0.07);display:flex;align-items:center;gap:0.6rem;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(212,245,60,0.35)';this.style.color='var(--paper)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.color='var(--smoke)'">
+              → WhatsApp Order
+            </a>
+            <a href="menu.html" style="font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--smoke);padding:0.75rem 1rem;border:1px solid rgba(255,255,255,0.07);display:flex;align-items:center;gap:0.6rem;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(212,245,60,0.35)';this.style.color='var(--paper)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.color='var(--smoke)'">
+              → View Full Menu
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div>
+        <div class="form-box-dark reveal">
+          <div class="form-title-mono">SEND US<br>A MESSAGE</div>
+          <p class="form-sub-mono">
+            Order ahead, ask about reservations, bulk orders, event bookings, or just say hi. We read every message.
+          </p>
+
+          <div id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your name"/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">WhatsApp</label>
+                <input type="tel" id="wa" class="form-input" placeholder="+62 8xx-xxxx-xxxx"/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Reason for reaching out</label>
+              <select id="reason" class="form-select">
+                <option value="">Select...</option>
+                <option>Order ahead / Takeaway</option>
+                <option>Reservation / Table booking</option>
+                <option>Bulk / Corporate order</option>
+                <option>Event / Private hire</option>
+                <option>Collaboration / Press</option>
+                <option>Feedback / Complaints</option>
+                <option>Just saying hi</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="What's on your mind..."></textarea>
+            </div>
+
+            <button class="form-submit" id="submitBtn" onclick="handleContact()">
+              → Send Message
+            </button>
+
+            <p style="font-family:'Space Mono',monospace;font-size:0.6rem;color:var(--zinc);text-align:center;margin-top:1rem;line-height:1.6;">
+              We reply within a few hours during operating hours.<br>
+              For urgent orders, WhatsApp is faster.
+            </p>
+          </div>
+
+          <!-- Success -->
+          <div class="form-success" id="contactSuccess">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:4rem;color:var(--neon);letter-spacing:0.05em;line-height:1;margin-bottom:1rem;">GOT IT.</div>
+            <p style="font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--ash);line-height:1.85;">
+              We'll get back to you within a few hours.<br><br>
+              <span style="color:var(--neon);">// See you at the bar.</span>
+            </p>
+            <button onclick="resetForm()" class="btn-hero-ghost" style="margin-top:2rem;display:inline-flex;font-size:0.65rem;">Send Another</button>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="margin-top:0.8rem;background:var(--black-2);border:1px solid rgba(255,255,255,0.07);padding:2.5rem;" class="reveal">
+          <div style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--neon);opacity:0.7;margin-bottom:1.5rem;">// FAQ</div>
+          <div id="faqContainer"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function handleContact() {
+      const name    = document.getElementById('name').value.trim();
+      const wa      = document.getElementById('wa').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !wa || !message) {
+        showToast('Fill in name, WA number, and message first.');
+        return;
+      }
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('contactSuccess').style.display = 'block';
+      }, 900);
+    }
+
+    function resetForm() {
+      ['name','wa','message'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('reason').value = '';
+      document.getElementById('contactForm').style.display = 'block';
+      document.getElementById('contactSuccess').style.display = 'none';
+      document.getElementById('submitBtn').textContent = '→ Send Message';
+      document.getElementById('submitBtn').disabled = false;
+    }
+
+    const faqs = [
+      { q: 'Can I order in advance via WhatsApp?', a: 'Yes. Message us at least 20 minutes before pickup and we\'ll have it ready. Good for rush hour mornings when the queue is long.' },
+      { q: 'Is there parking?', a: 'Limited street parking in front. Motorcycle parking out back. Best to walk or GoJek — we\'re right on the main road.' },
+      { q: 'Do you have private space for meetings or events?', a: 'We have a corner section that seats up to 12 people. No reservation fee, but please message ahead so we can set it up. For larger private events, message us.' },
+      { q: 'Can I work here all day?', a: 'Yes. We ask that you order at least one item per 2–3 hours during peak times (8–11AM and 5–8PM). Outside those hours, stay as long as you want.' },
+      { q: 'Do you offer subscriptions or loyalty programs?', a: 'Stamp card: buy 9 coffees, 10th is free. Ask your barista for a card. No app required, no data harvested, no algorithm.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('faqContainer');
+      faqs.forEach((faq, i) => {
+        const el = document.createElement('div');
+        el.style.borderBottom = '1px solid rgba(255,255,255,0.05)';
+        el.innerHTML = `
+          <button onclick="toggleFaq(${i})" style="width:100%;text-align:left;padding:1.1rem 0;background:none;border:none;cursor:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'Space Mono',sans-serif;">
+            <span style="font-size:0.75rem;color:var(--smoke);">// ${faq.q}</span>
+            <span id="faq-icon-${i}" style="color:var(--neon);font-size:0.85rem;flex-shrink:0;font-weight:700;font-family:'Space Mono',monospace;">+</span>
+          </button>
+          <div id="faq-body-${i}" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;">
+            <p style="font-family:'Space Mono',monospace;font-size:0.7rem;color:var(--ash);line-height:1.8;padding-bottom:1.1rem;">${faq.a}</p>
+          </div>
+        `;
+        container.appendChild(el);
+      });
+
+      // Highlight today
+      const day = new Date().getDay();
+      const wdRow = document.getElementById('row-weekday');
+      const weRow = document.getElementById('row-weekend');
+      if (day >= 1 && day <= 5 && wdRow) wdRow.classList.add('today');
+      else if ((day === 0 || day === 6) && weRow) weRow.classList.add('today');
+    });
+
+    function toggleFaq(i) {
+      const body = document.getElementById(`faq-body-${i}`);
+      const icon = document.getElementById(`faq-icon-${i}`);
+      const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+      faqs.forEach((_, j) => {
+        document.getElementById(`faq-body-${j}`).style.maxHeight = '0px';
+        document.getElementById(`faq-icon-${j}`).textContent = '+';
+      });
+      if (!isOpen) {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        icon.textContent = '—';
+      }
+    }
+  </script>
+</body>
+</html>

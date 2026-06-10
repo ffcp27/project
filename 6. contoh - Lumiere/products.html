@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk — Lumière Beauty Clinic</title>
+  <meta name="description" content="Produk skincare medis-grade eksklusif dari Lumière Beauty Clinic: serum, moisturizer, sunscreen, dan perawatan kulit pilihan dokter." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1556228852-6d35a585d566?w=1800&q=85" alt="Skincare products" class="page-hero-bg" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="section-label">Produk Pilihan Dokter</span>
+      <h1 class="section-title">Skincare <em>Medis-Grade</em></h1>
+      <p class="section-desc">Formula klinis yang diresepkan dan direkomendasikan langsung oleh dokter kami — untuk hasil yang konsisten di rumah.</p>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section class="shop-section">
+    <div class="shop-inner">
+
+      <div style="max-width:600px; margin-bottom:3.5rem;">
+        <span class="section-label reveal">Katalog Produk</span>
+        <h2 class="section-title reveal">Investasi terbaik<br>untuk <em>kulitmu</em></h2>
+        <p class="section-desc reveal" style="margin-top:0.8rem;">Semua produk dipilih dan diuji langsung oleh tim dokter Lumière sebelum tersedia untuk klien kami.</p>
+      </div>
+
+      <div class="shop-filter-bar reveal">
+        <div class="filter-tabs" id="shopTabs">
+          <button class="f-tab active" data-filter="all">Semua</button>
+          <button class="f-tab" data-filter="serum">Serum</button>
+          <button class="f-tab" data-filter="moisturizer">Moisturizer</button>
+          <button class="f-tab" data-filter="sunscreen">Sunscreen</button>
+          <button class="f-tab" data-filter="cleanser">Cleanser</button>
+          <button class="f-tab" data-filter="treatment">Treatment</button>
+        </div>
+        <div style="font-size:0.72rem;color:var(--taupe-light);letter-spacing:0.1em;">
+          Menampilkan <span id="pCount">14</span> produk
+        </div>
+      </div>
+
+      <div class="shop-grid" id="productGrid">
+
+        <!-- SERUM -->
+        <div class="product-card visible" data-cat="serum" data-price="485000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=85" alt="Vitamin C serum" />
+            <span class="product-badge">Best Seller</span>
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Vitamin C Brightening Serum')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Serum · Brightening</div>
+            <div class="product-name">Vitamin C 20% Brightening Serum</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 485.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Vitamin C Serum')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card visible" data-cat="serum" data-price="620000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&q=85" alt="Retinol serum" />
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Retinol 0.3% Serum')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Serum · Anti-Aging</div>
+            <div class="product-name">Retinol 0.3% Overnight Renewal Serum</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 620.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Retinol Serum')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card visible" data-cat="serum" data-price="390000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?w=600&q=85" alt="Niacinamide serum" />
+            <span class="product-badge">New</span>
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Niacinamide 10% Serum')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Serum · Pore Refining</div>
+            <div class="product-name">Niacinamide 10% + Zinc Pore Serum</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 390.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Niacinamide Serum')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card visible" data-cat="serum" data-price="750000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=600&q=85" alt="Hyaluronic acid serum" />
+            <button class="product-wishlist" onclick="toggleWishlist(this,'HA Multi-Weight Serum')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Serum · Hydrating</div>
+            <div class="product-name">Hyaluronic Acid Multi-Weight Serum</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 750.000</div>
+              <button class="btn-add-cart" onclick="addToCart('HA Serum')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOISTURIZER -->
+        <div class="product-card visible" data-cat="moisturizer" data-price="420000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=85" alt="Moisturizer" />
+            <span class="product-badge">Best Seller</span>
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Barrier Repair Cream')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Moisturizer · Barrier Repair</div>
+            <div class="product-name">Ceramide Barrier Repair Cream 50ml</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 420.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Barrier Cream')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card visible" data-cat="moisturizer" data-price="360000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=85" alt="Gel moisturizer" />
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Oil-Free Gel Moisturizer')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Moisturizer · Oil-Free</div>
+            <div class="product-name">Lightweight Oil-Free Gel Moisturizer</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 360.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Gel Moisturizer')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUNSCREEN -->
+        <div class="product-card visible" data-cat="sunscreen" data-price="285000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&q=85" alt="Sunscreen" />
+            <span class="product-badge">Best Seller</span>
+            <button class="product-wishlist" onclick="toggleWishlist(this,'SPF 50+ UV Shield')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Sunscreen · SPF 50+</div>
+            <div class="product-name">UV Shield Invisible Sunscreen SPF 50+ PA++++</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 285.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Sunscreen SPF 50+')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card visible" data-cat="sunscreen" data-price="320000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=600&q=85" alt="Tinted sunscreen" />
+            <span class="product-badge">New</span>
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Tinted Mineral Sunscreen')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Sunscreen · Tinted</div>
+            <div class="product-name">Tinted Mineral Sunscreen SPF 45</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 320.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Tinted Sunscreen')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLEANSER -->
+        <div class="product-card visible" data-cat="cleanser" data-price="195000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1591375462291-4c5fdb2e27ad?w=600&q=85" alt="Gentle cleanser" />
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Gentle Foam Cleanser')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Cleanser · Sensitive</div>
+            <div class="product-name">Gentle Amino Acid Foam Cleanser</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 195.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Foam Cleanser')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card visible" data-cat="cleanser" data-price="240000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=85" alt="Cleansing oil" />
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Deep Cleansing Oil')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Cleanser · Makeup Remover</div>
+            <div class="product-name">Balancing Deep Cleansing Oil 150ml</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 240.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Cleansing Oil')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TREATMENT -->
+        <div class="product-card visible" data-cat="treatment" data-price="890000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?w=600&q=85" alt="AHA BHA toner" />
+            <span class="product-badge">Dokter Pilihan</span>
+            <button class="product-wishlist" onclick="toggleWishlist(this,'AHA BHA Exfoliating Toner')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Treatment · Exfoliating</div>
+            <div class="product-name">AHA 7% + BHA 1% Glow Toner 200ml</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 890.000</div>
+              <button class="btn-add-cart" onclick="addToCart('AHA BHA Toner')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card visible" data-cat="treatment" data-price="1250000">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1635274605638-d44babc08a4f?w=600&q=85" alt="Eye cream" />
+            <button class="product-wishlist" onclick="toggleWishlist(this,'Peptide Eye Cream')" data-liked="false">♡</button>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Treatment · Anti-Aging</div>
+            <div class="product-name">Peptide Complex Eye Contour Cream</div>
+            <div class="product-footer">
+              <div class="product-price">Rp 1.250.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Peptide Eye Cream')">+ Keranjang</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR'S NOTE -->
+  <section style="padding:6rem 4rem; background:var(--ivory-warm);">
+    <div style="max-width:900px; margin:0 auto; display:grid; grid-template-columns:1fr 2fr; gap:4rem; align-items:center;">
+      <div class="reveal" style="text-align:center;">
+        <img src="https://i.pravatar.cc/200?img=49" alt="dr. Sari" style="width:140px;height:140px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;border:3px solid rgba(201,169,110,0.3);filter:grayscale(10%);" />
+        <div style="font-family:'Marcellus',serif;font-size:1rem;color:var(--obsidian);letter-spacing:0.05em;">dr. Sari Andayani, SpKK</div>
+        <div style="font-size:0.62rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-top:0.3rem;">Head of Dermatology</div>
+      </div>
+      <div class="reveal">
+        <span class="section-label">Catatan Dokter</span>
+        <h2 class="section-title" style="font-size:1.8rem; margin-bottom:1.2rem;">Tentang produk <em>yang kami pilih</em></h2>
+        <p class="section-desc" style="margin-bottom:1rem;">"Kami tidak menjual produk hanya karena trendi. Setiap item dalam katalog kami telah melalui evaluasi klinis, uji formulasi, dan pengujian langsung oleh tim dokter kami.</p>
+        <p class="section-desc">"Percayakan skincare routinemu pada science, bukan hanya marketing. Jika ragu, booking konsultasi — kami dengan senang hati membantu memilih yang tepat untukmu."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1920&q=80" alt="Doctor consultation" class="cta-banner-img" />
+    <div class="cta-banner-content">
+      <span class="section-label">Konsultasi Skincare</span>
+      <h2>Tidak yakin produk<br>mana yang <em>tepat?</em></h2>
+      <p>Konsultasikan routine skincare-mu dengan dokter kami dan dapatkan rekomendasi personal yang tepat sasaran.</p>
+      <a href="contact.html" class="btn-gold">Konsultasi Gratis Sekarang</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs  = document.querySelectorAll('#shopTabs .f-tab');
+      const cards = document.querySelectorAll('#productGrid .product-card');
+      const counter = document.getElementById('pCount');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const filter = tab.dataset.filter;
+          let count = 0;
+          cards.forEach(card => {
+            const show = filter === 'all' || card.dataset.cat === filter;
+            card.classList.toggle('visible', show);
+            if (show) count++;
+          });
+          if (counter) counter.textContent = count;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

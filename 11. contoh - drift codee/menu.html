@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu — Drift Coffee</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div class="page-hero" data-title="MENU">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="bc-sep">/</span>
+        <span>Menu</span>
+      </div>
+      <span class="sec-label">What We Serve</span>
+      <div class="sec-title">THE FULL<br><span class="neon-t">LINEUP</span></div>
+      <p style="font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--ash);margin-top:1rem;max-width:440px;line-height:1.7;">
+        Prices are in thousand rupiah. Everything is made fresh. Everything is worth it.
+      </p>
+    </div>
+  </div>
+
+  <section class="menu-full-section">
+    <div class="menu-full-inner">
+
+      <!-- Menu tabs (all categories) -->
+      <div class="menu-tabs reveal" style="margin-bottom:3rem;" id="fullMenuTabs">
+        <button class="menu-tab active" data-panel="espresso-full">Espresso</button>
+        <button class="menu-tab" data-panel="brew-full">Manual Brew</button>
+        <button class="menu-tab" data-panel="cold-full">Cold & Iced</button>
+        <button class="menu-tab" data-panel="noncoffee-full">Non-Coffee</button>
+        <button class="menu-tab" data-panel="food-full">Food</button>
+      </div>
+
+      <!-- ESPRESSO -->
+      <div class="menu-panel active" id="panel-espresso-full">
+        <div style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--ash);border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:0.8rem;margin-bottom:0;" class="reveal">
+          ↳ Espresso Based — All made with our house blend, dark roast Toraja + Gayo
+        </div>
+        <table class="menu-table">
+          <thead>
+            <tr>
+              <th>Drink</th>
+              <th>Tasting Notes</th>
+              <th></th>
+              <th>IDR/k</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Straight Black</div><div class="menu-item-desc">Double ristretto · no milk · no sugar</div></td>
+              <td><div class="menu-item-desc">Dark choco · tobacco · long finish</div></td>
+              <td><span class="menu-tag tag-sig">Signature</span></td>
+              <td><div class="menu-price">28</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Straight Black')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Drift Latte</div><div class="menu-item-desc">Espresso · oat milk · house caramel drizzle</div></td>
+              <td><div class="menu-item-desc">Smooth · sweet undertone · daily driver</div></td>
+              <td><span class="menu-tag tag-hot">Best Seller</span></td>
+              <td><div class="menu-price">34</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Drift Latte')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Flat White</div><div class="menu-item-desc">Double ristretto · silky microfoam</div></td>
+              <td><div class="menu-item-desc">Intense · clean · no fuss</div></td>
+              <td><span class="menu-tag tag-sig">Classic</span></td>
+              <td><div class="menu-price">30</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Flat White')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Cappuccino</div><div class="menu-item-desc">Espresso · steamed milk · thick foam</div></td>
+              <td><div class="menu-item-desc">Classic ratio · done right</div></td>
+              <td><span class="menu-tag tag-sig">Classic</span></td>
+              <td><div class="menu-price">28</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Cappuccino')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Overthought Mocha</div><div class="menu-item-desc">Espresso · 70% Valrhona cacao · steamed milk</div></td>
+              <td><div class="menu-item-desc">Bitter · complex · not too sweet</div></td>
+              <td><span class="menu-tag tag-new">New</span></td>
+              <td><div class="menu-price">36</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Overthought Mocha')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Cortado</div><div class="menu-item-desc">1:1 espresso to warm milk · small &amp; focused</div></td>
+              <td><div class="menu-item-desc">Balanced · zero nonsense</div></td>
+              <td><span class="menu-tag tag-sig">Specialty</span></td>
+              <td><div class="menu-price">26</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Cortado')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Dirty Chai</div><div class="menu-item-desc">Double shot · house chai · oat milk</div></td>
+              <td><div class="menu-item-desc">Spiced · warm · unexpected</div></td>
+              <td><span class="menu-tag tag-new">New</span></td>
+              <td><div class="menu-price">35</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Dirty Chai')">+</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MANUAL BREW -->
+      <div class="menu-panel" id="panel-brew-full">
+        <div style="font-family:'Space Mono',monospace;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--ash);border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:0.8rem;margin-bottom:0;" class="reveal">
+          ↳ Manual Brew — Single origin, freshly roasted. Ask your barista about today's beans.
+        </div>
+        <table class="menu-table">
+          <thead>
+            <tr><th>Method</th><th>Origin & Process</th><th></th><th>IDR/k</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr class="reveal">
+              <td><div class="menu-item-name">V60 Pour Over</div><div class="menu-item-desc">4-min brew · bloom + pour · clarity-focused</div></td>
+              <td><div class="menu-item-desc">Gayo Natural — floral, strawberry, clean finish</div></td>
+              <td><span class="menu-tag tag-sig">Single Origin</span></td>
+              <td><div class="menu-price">40</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('V60 Gayo')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Aeropress</div><div class="menu-item-desc">Inverted method · full immersion · 2 min</div></td>
+              <td><div class="menu-item-desc">Toraja Washed — chocolate, earthy, full body</div></td>
+              <td><span class="menu-tag tag-hot">House Fav</span></td>
+              <td><div class="menu-price">38</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Aeropress Toraja')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">French Press</div><div class="menu-item-desc">4-min steep · coarse grind · full sediment</div></td>
+              <td><div class="menu-item-desc">Flores Honey — brown sugar, nutty, creamy</div></td>
+              <td><span class="menu-tag tag-sig">Weekend</span></td>
+              <td><div class="menu-price">36</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('French Press Flores')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Chemex</div><div class="menu-item-desc">2-cup · thick filter · ultra clean cup</div></td>
+              <td><div class="menu-item-desc">Kintamani Natural — citrus, tea-like, delicate</div></td>
+              <td><span class="menu-tag tag-new">Available Fri–Sun</span></td>
+              <td><div class="menu-price">42</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Chemex Kintamani')">+</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- COLD & ICED -->
+      <div class="menu-panel" id="panel-cold-full">
+        <table class="menu-table">
+          <thead>
+            <tr><th>Drink</th><th>Notes</th><th></th><th>IDR/k</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Cold Brew 18hr</div><div class="menu-item-desc">18-hour cold steep · Toraja blend · over ice</div></td>
+              <td><div class="menu-item-desc">Ultra smooth · low acid · hits different</div></td>
+              <td><span class="menu-tag tag-hot">Fan Fav</span></td>
+              <td><div class="menu-price">38</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Cold Brew 18hr')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Iced Drift Latte</div><div class="menu-item-desc">Double espresso · oat milk · ice · caramel</div></td>
+              <td><div class="menu-item-desc">The go-to · always right</div></td>
+              <td><span class="menu-tag tag-hot">Best Seller</span></td>
+              <td><div class="menu-price">36</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Iced Drift Latte')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Coffee Tonic</div><div class="menu-item-desc">Ristretto · tonic water · ice · lime</div></td>
+              <td><div class="menu-item-desc">Surprising. Refreshing. Polarizing.</div></td>
+              <td><span class="menu-tag tag-new">New</span></td>
+              <td><div class="menu-price">34</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Coffee Tonic')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Shakerato</div><div class="menu-item-desc">Espresso shaken over ice · silky foam top</div></td>
+              <td><div class="menu-item-desc">Italian style. No milk needed.</div></td>
+              <td><span class="menu-tag tag-sig">Italian</span></td>
+              <td><div class="menu-price">32</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Shakerato')">+</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- NON COFFEE -->
+      <div class="menu-panel" id="panel-noncoffee-full">
+        <table class="menu-table">
+          <thead>
+            <tr><th>Drink</th><th>Notes</th><th></th><th>IDR/k</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Matcha Oat Latte</div><div class="menu-item-desc">Ceremonial grade Uji · oat milk</div></td>
+              <td><div class="menu-item-desc">Earthy · sweet · grounding</div></td>
+              <td><span class="menu-tag tag-hot">Popular</span></td>
+              <td><div class="menu-price">33</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Matcha Oat Latte')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Dark Hot Choc</div><div class="menu-item-desc">Belgian 70% · steamed milk</div></td>
+              <td><div class="menu-item-desc">Rich, not sweet. Grown-up hot choc.</div></td>
+              <td><span class="menu-tag tag-sig">House Made</span></td>
+              <td><div class="menu-price">30</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Dark Hot Choc')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Sparkling Lemonade</div><div class="menu-item-desc">Fresh squeeze · sparkling water · mint</div></td>
+              <td><div class="menu-item-desc">Clean. Bright. No compromise.</div></td>
+              <td><span class="menu-tag tag-new">Fresh</span></td>
+              <td><div class="menu-price">25</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Sparkling Lemonade')">+</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FOOD -->
+      <div class="menu-panel" id="panel-food-full">
+        <table class="menu-table">
+          <thead>
+            <tr><th>Item</th><th>Description</th><th></th><th>IDR/k</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Sourdough Toast</div><div class="menu-item-desc">48-hr ferment · house-baked · warm</div></td>
+              <td><div class="menu-item-desc">Whipped butter + seasonal jam</div></td>
+              <td><span class="menu-tag tag-hot">Morning</span></td>
+              <td><div class="menu-price">28</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Sourdough Toast')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Avocado on Everything</div><div class="menu-item-desc">Sourdough · smashed avo · chili flakes · egg</div></td>
+              <td><div class="menu-item-desc">The cliché done right</div></td>
+              <td><span class="menu-tag tag-sig">Classic</span></td>
+              <td><div class="menu-price">45</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Avo Toast')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Banana Bread</div><div class="menu-item-desc">In-house · walnut · brown sugar crust</div></td>
+              <td><div class="menu-item-desc">Dense, moist, no apologies</div></td>
+              <td><span class="menu-tag tag-new">Fresh</span></td>
+              <td><div class="menu-price">25</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Banana Bread')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">Butter Croissant</div><div class="menu-item-desc">Laminated · 27 layers · flaky</div></td>
+              <td><div class="menu-item-desc">Pairs with anything</div></td>
+              <td><span class="menu-tag tag-sig">Bakery</span></td>
+              <td><div class="menu-price">22</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Butter Croissant')">+</button></td>
+            </tr>
+            <tr class="reveal">
+              <td><div class="menu-item-name">NY Choc Chip Cookie</div><div class="menu-item-desc">Crisp edges · chewy center · sea salt</div></td>
+              <td><div class="menu-item-desc">One is never enough</div></td>
+              <td><span class="menu-tag tag-hot">Best</span></td>
+              <td><div class="menu-price">18</div></td>
+              <td><button class="btn-add-menu" onclick="orderItem('Choc Chip Cookie')">+</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1920&q=80" alt="Coffee" class="cta-bg"/>
+    <div class="cta-overlay"></div>
+    <div class="cta-inner">
+      <div>
+        <div class="cta-headline">WANT IT<br><span class="neon">NOW?</span></div>
+        <p class="cta-sub">Order via WhatsApp or walk in.<br>We'll have it ready.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-cta-main">→ Order Now</a>
+        <a href="index.html" class="btn-cta-ghost">Back Home</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

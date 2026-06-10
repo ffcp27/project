@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmasiku — Apotek Terpercaya Balaraja</title>
+  <meta name="description" content="Farmasiku: apotek terpercaya di Balaraja dengan produk lengkap, apoteker bersertifikat, dan layanan konsultasi gratis. Buka setiap hari 07.00–22.00." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="topbar-placeholder"></div>
+  <div id="nav-placeholder"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <!-- Left: Copy -->
+      <div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Apotek Resmi Terdaftar Kemenkes RI
+        </div>
+        <h1 class="hero-title">
+          Kesehatan keluarga,<br>
+          <span class="accent">prioritas</span> kami<br>
+          setiap <span class="underline">hari</span>
+        </h1>
+        <p class="hero-desc">
+          Farmasiku hadir dengan ribuan produk obat dan suplemen, apoteker berpengalaman, dan layanan konsultasi gratis — untuk kesehatan keluarga yang lebih terjaga.
+        </p>
+        <div class="hero-actions">
+          <a href="produk.html" class="btn-primary">💊 Lihat Produk</a>
+          <a href="konsultasi.html" class="btn-outline-white">💬 Konsultasi Gratis</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <div>
+              <span class="trust-num" data-count="5000" data-suffix="+">0+</span>
+              <span class="trust-label">Produk<br>Tersedia</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div>
+              <span class="trust-num" data-count="15" data-suffix="+">0+</span>
+              <span class="trust-label">Tahun<br>Melayani</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div>
+              <span class="trust-num" data-count="20000" data-suffix="+">0+</span>
+              <span class="trust-label">Pelanggan<br>Puas</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div>
+              <span class="trust-num">4.9★</span>
+              <span class="trust-label">Rating<br>Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Search Card + Features -->
+      <div class="hero-right">
+        <div class="hero-search-card">
+          <div class="hero-search-title">🔍 Cari Obat / Produk</div>
+          <div class="search-input-wrap">
+            <input type="text" class="hero-search-input" placeholder="Nama obat, vitamin, atau produk..." />
+            <button class="search-btn">🔍</button>
+          </div>
+          <div class="search-tags">
+            <button class="search-tag" onclick="showToast('Mencari Paracetamol...')">Paracetamol</button>
+            <button class="search-tag" onclick="showToast('Mencari Vitamin C...')">Vitamin C</button>
+            <button class="search-tag" onclick="showToast('Mencari Antasida...')">Antasida</button>
+            <button class="search-tag" onclick="showToast('Mencari Masker...')">Masker</button>
+            <button class="search-tag" onclick="showToast('Mencari Ibuprofen...')">Ibuprofen</button>
+          </div>
+        </div>
+
+        <div class="hero-feature-row">
+          <div class="hero-feat-card">
+            <div class="feat-icon-wrap feat-teal">💊</div>
+            <div>
+              <div class="feat-title">5.000+ Produk</div>
+              <div class="feat-sub">Obat resep & OTC lengkap</div>
+            </div>
+          </div>
+          <div class="hero-feat-card">
+            <div class="feat-icon-wrap feat-green">🚚</div>
+            <div>
+              <div class="feat-title">Antar ke Rumah</div>
+              <div class="feat-sub">Pengiriman area Balaraja</div>
+            </div>
+          </div>
+          <div class="hero-feat-card">
+            <div class="feat-icon-wrap feat-amber">👨‍⚕️</div>
+            <div>
+              <div class="feat-title">Konsultasi Gratis</div>
+              <div class="feat-sub">Apoteker bersertifikat</div>
+            </div>
+          </div>
+          <div class="hero-feat-card">
+            <div class="feat-icon-wrap feat-navy">🏅</div>
+            <div>
+              <div class="feat-title">Produk Asli</div>
+              <div class="feat-sub">100% resmi & BPOM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INFO STRIP ===== -->
+  <div class="info-strip">
+    <div class="info-strip-inner">
+      <div class="info-strip-item">
+        <div class="strip-icon">🏅</div>
+        <div>
+          <div class="strip-title">Produk 100% Asli</div>
+          <div class="strip-sub">Resmi & terdaftar BPOM</div>
+        </div>
+      </div>
+      <div class="info-strip-item">
+        <div class="strip-icon">🚚</div>
+        <div>
+          <div class="strip-title">Antar ke Rumah</div>
+          <div class="strip-sub">Gratis ongkir radius 5km</div>
+        </div>
+      </div>
+      <div class="info-strip-item">
+        <div class="strip-icon">👨‍⚕️</div>
+        <div>
+          <div class="strip-title">Apoteker Siap</div>
+          <div class="strip-sub">Konsultasi gratis via WA</div>
+        </div>
+      </div>
+      <div class="info-strip-item">
+        <div class="strip-icon">💳</div>
+        <div>
+          <div class="strip-title">Terima BPJS</div>
+          <div class="strip-sub">Tunai, debit, e-wallet</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== LAYANAN ===== -->
+  <section class="layanan-section">
+    <div class="sec-wrap">
+      <div style="text-align:center; max-width:560px; margin:0 auto;">
+        <span class="sec-label reveal">Layanan Kami</span>
+        <h2 class="sec-title reveal">Lebih dari sekadar <em>toko obat</em></h2>
+        <p class="sec-desc reveal" style="margin-top:0.8rem;">Kami hadir sebagai mitra kesehatan keluarga Anda — dari penjualan obat hingga konsultasi, cek kesehatan, dan pengiriman.</p>
+      </div>
+    </div>
+    <div class="layanan-grid">
+      <div class="layanan-card reveal">
+        <div class="layanan-icon icon-teal">💊</div>
+        <div class="layanan-title">Penjualan Obat</div>
+        <p class="layanan-desc">Obat resep, OTC, suplemen, vitamin, dan alat kesehatan. Produk 100% asli terdaftar BPOM dengan harga terjangkau.</p>
+      </div>
+      <div class="layanan-card reveal">
+        <div class="layanan-icon icon-green">👨‍⚕️</div>
+        <div class="layanan-title">Konsultasi Apoteker</div>
+        <p class="layanan-desc">Konsultasi gratis dengan apoteker bersertifikat tentang obat, dosis, interaksi, dan kondisi kesehatan Anda.</p>
+      </div>
+      <div class="layanan-card reveal">
+        <div class="layanan-icon icon-amber">🩺</div>
+        <div class="layanan-title">Cek Kesehatan</div>
+        <p class="layanan-desc">Pengecekan tekanan darah, gula darah, kolesterol, dan asam urat langsung di apotek tanpa perlu janji temu.</p>
+      </div>
+      <div class="layanan-card reveal">
+        <div class="layanan-icon icon-teal">🚚</div>
+        <div class="layanan-title">Antar ke Rumah</div>
+        <p class="layanan-desc">Pesan obat via WhatsApp dan kami antar ke rumah Anda. Layanan pengiriman cepat area Balaraja dan sekitarnya.</p>
+      </div>
+      <div class="layanan-card reveal">
+        <div class="layanan-icon icon-green">📋</div>
+        <div class="layanan-title">Racik Resep Dokter</div>
+        <p class="layanan-desc">Menerima dan meracik resep dokter dengan ketelitian tinggi. Tersedia obat-obatan racikan berkualitas.</p>
+      </div>
+      <div class="layanan-card reveal">
+        <div class="layanan-icon icon-amber">💳</div>
+        <div class="layanan-title">Terima BPJS</div>
+        <p class="layanan-desc">Menerima resep BPJS Kesehatan dengan proses yang mudah dan cepat. Hemat biaya obat untuk keluarga.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUK UNGGULAN ===== -->
+  <section class="produk-section">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div class="produk-header">
+        <div>
+          <span class="sec-label reveal">Produk Terlaris</span>
+          <h2 class="sec-title reveal">Pilihan <em>terpopuler</em> kami</h2>
+        </div>
+        <a href="produk.html" class="btn-outline-teal reveal">Lihat Semua Produk →</a>
+      </div>
+      <div class="produk-tabs reveal" id="homeTabs">
+        <button class="p-tab active" data-filter="all">Semua</button>
+        <button class="p-tab" data-filter="obat">💊 Obat</button>
+        <button class="p-tab" data-filter="vitamin">🌿 Vitamin</button>
+        <button class="p-tab" data-filter="alkes">🩺 Alat Kesehatan</button>
+        <button class="p-tab" data-filter="skincare">✨ Skincare</button>
+      </div>
+      <div class="produk-grid" id="homeGrid">
+
+        <div class="produk-card visible" data-cat="obat">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80" alt="Paracetamol" />
+            <span class="produk-badge badge-teal">Terlaris</span>
+            <button class="produk-wishlist" onclick="addWishlist(this,'Paracetamol 500mg')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Obat Bebas</div>
+            <div class="produk-name">Paracetamol 500mg</div>
+            <div class="produk-sub">Strip 10 tablet · Generik</div>
+            <div class="produk-footer">
+              <div class="produk-price">Rp 3.500</div>
+              <button class="btn-add-cart" onclick="addToCart('Paracetamol 500mg')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produk-card visible" data-cat="vitamin">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80" alt="Vitamin C" />
+            <span class="produk-badge badge-green">Hot Item</span>
+            <button class="produk-wishlist" onclick="addWishlist(this,'Vitamin C 1000mg')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Vitamin & Suplemen</div>
+            <div class="produk-name">Vitamin C 1000mg Effervescent</div>
+            <div class="produk-sub">Tube 10 tablet · Rasa Jeruk</div>
+            <div class="produk-footer">
+              <div class="produk-price">Rp 28.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Vitamin C 1000mg')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produk-card visible" data-cat="obat">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=500&q=80" alt="Antasida" />
+            <button class="produk-wishlist" onclick="addWishlist(this,'Antasida Tablet')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Obat Bebas</div>
+            <div class="produk-name">Antasida DOEN Tablet</div>
+            <div class="produk-sub">Botol 100 tablet · Generik</div>
+            <div class="produk-footer">
+              <div class="produk-price">Rp 12.500</div>
+              <button class="btn-add-cart" onclick="addToCart('Antasida DOEN')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produk-card visible" data-cat="vitamin">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=500&q=80" alt="Multivitamin" />
+            <span class="produk-badge badge-amber">Promo</span>
+            <button class="produk-wishlist" onclick="addWishlist(this,'Multivitamin')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Multivitamin</div>
+            <div class="produk-name">Supravit Plus Multivitamin</div>
+            <div class="produk-sub">Botol 100 kaplet</div>
+            <div class="produk-footer">
+              <div class="produk-price">
+                <span class="old">Rp 85.000</span>
+                Rp 67.000
+              </div>
+              <button class="btn-add-cart" onclick="addToCart('Supravit Multivitamin')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produk-card visible" data-cat="alkes">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1622253694238-3b22139576c6?w=500&q=80" alt="Termometer" />
+            <span class="produk-badge badge-teal">Baru</span>
+            <button class="produk-wishlist" onclick="addWishlist(this,'Termometer Digital')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Alat Kesehatan</div>
+            <div class="produk-name">Termometer Digital Infrared</div>
+            <div class="produk-sub">Non-contact · 1 detik</div>
+            <div class="produk-footer">
+              <div class="produk-price">Rp 125.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Termometer Infrared')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produk-card visible" data-cat="skincare">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&q=80" alt="Sunscreen" />
+            <span class="produk-badge badge-promo">Sale</span>
+            <button class="produk-wishlist" onclick="addWishlist(this,'Sunscreen SPF 50')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Skincare</div>
+            <div class="produk-name">Sunscreen SPF 50+ PA++++</div>
+            <div class="produk-sub">50ml · Water resistant</div>
+            <div class="produk-footer">
+              <div class="produk-price">
+                <span class="old">Rp 95.000</span>
+                Rp 72.000
+              </div>
+              <button class="btn-add-cart" onclick="addToCart('Sunscreen SPF 50+')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produk-card visible" data-cat="alkes">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?w=500&q=80" alt="Tensimeter" />
+            <button class="produk-wishlist" onclick="addWishlist(this,'Tensimeter Digital')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Alat Kesehatan</div>
+            <div class="produk-name">Tensimeter Digital Otomatis</div>
+            <div class="produk-sub">Upper arm · Memory 90 data</div>
+            <div class="produk-footer">
+              <div class="produk-price">Rp 285.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Tensimeter Digital')">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produk-card visible" data-cat="vitamin">
+          <div class="produk-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=500&q=80" alt="Omega 3" />
+            <button class="produk-wishlist" onclick="addWishlist(this,'Omega-3 Fish Oil')" data-liked="false">🤍</button>
+          </div>
+          <div class="produk-body">
+            <div class="produk-cat">Suplemen</div>
+            <div class="produk-name">Omega-3 Fish Oil 1000mg</div>
+            <div class="produk-sub">Botol 60 softgel</div>
+            <div class="produk-footer">
+              <div class="produk-price">Rp 95.000</div>
+              <button class="btn-add-cart" onclick="addToCart('Omega-3 Fish Oil')">+</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <div class="gallery-section">
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=80" alt="Apotek interior" />
+      <div class="gal-overlay"><span class="gal-label">Interior Farmasiku</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Apoteker" />
+      <div class="gal-overlay"><span class="gal-label">Tim Apoteker Kami</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80" alt="Obat-obatan" />
+      <div class="gal-overlay"><span class="gal-label">5.000+ Produk</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80" alt="Konsultasi" />
+      <div class="gal-overlay"><span class="gal-label">Konsultasi Apoteker</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=900&q=80" alt="Vitamin" />
+      <div class="gal-overlay"><span class="gal-label">Vitamin & Suplemen</span></div>
+    </div>
+    <div class="gal-item">
+      <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80" alt="Pelayanan" />
+      <div class="gal-overlay"><span class="gal-label">Pelayanan Terbaik</span></div>
+    </div>
+  </div>
+
+  <!-- ===== APOTEKER ===== -->
+  <section class="apoteker-section">
+    <div class="apoteker-inner">
+      <div style="text-align:center; max-width:560px; margin:0 auto;">
+        <span class="sec-label reveal">Tim Apoteker</span>
+        <h2 class="sec-title reveal">Ditangani oleh ahli yang <em>berpengalaman</em></h2>
+        <p class="sec-desc reveal" style="margin-top:0.8rem;">Seluruh apoteker kami memiliki Surat Izin Praktik Apoteker (SIPA) resmi dari Kemenkes RI.</p>
+      </div>
+      <div class="apoteker-grid">
+        <div class="apoteker-card reveal">
+          <div class="apoteker-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80" alt="Apt. Dewi" class="apoteker-img" />
+            <span class="apoteker-badge">Apoteker Utama</span>
+          </div>
+          <div class="apoteker-body">
+            <div class="apoteker-name">Apt. Dewi Lestari, S.Farm.</div>
+            <span class="apoteker-role">Apoteker Pengelola</span>
+            <div class="apoteker-spec">Spesialis obat-obatan kronis · 12 tahun pengalaman</div>
+          </div>
+        </div>
+        <div class="apoteker-card reveal">
+          <div class="apoteker-img-wrap">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Apt. Reza" class="apoteker-img" />
+            <span class="apoteker-badge">Apoteker</span>
+          </div>
+          <div class="apoteker-body">
+            <div class="apoteker-name">Apt. Reza Pratama, S.Farm.</div>
+            <span class="apoteker-role">Apoteker Klinis</span>
+            <div class="apoteker-spec">Konsultasi obat & nutrisi · 8 tahun pengalaman</div>
+          </div>
+        </div>
+        <div class="apoteker-card reveal">
+          <div class="apoteker-img-wrap">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&q=80" alt="Apt. Maya" class="apoteker-img" />
+            <span class="apoteker-badge">Apoteker</span>
+          </div>
+          <div class="apoteker-body">
+            <div class="apoteker-name">Apt. Maya Sari, S.Farm.</div>
+            <span class="apoteker-role">Apoteker Racikan</span>
+            <div class="apoteker-spec">Spesialis obat racikan · 6 tahun pengalaman</div>
+          </div>
+        </div>
+        <div class="apoteker-card reveal">
+          <div class="apoteker-img-wrap">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=500&q=80" alt="Apt. Budi" class="apoteker-img" />
+            <span class="apoteker-badge">Apoteker</span>
+          </div>
+          <div class="apoteker-body">
+            <div class="apoteker-name">Apt. Budi Santoso, S.Farm.</div>
+            <span class="apoteker-role">Apoteker Sore/Malam</span>
+            <div class="apoteker-spec">Farmakologi & BPJS · 9 tahun pengalaman</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONI ===== -->
+  <section class="testi-section">
+    <div class="testi-inner">
+      <div style="text-align:center; max-width:560px; margin:0 auto;">
+        <span class="sec-label reveal">Apa Kata Pelanggan</span>
+        <h2 class="sec-title reveal">Dipercaya ribuan <em>keluarga</em> di Balaraja</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Farmasiku selalu ada stok obat yang saya butuhkan. Apotekernya juga sangat membantu menjelaskan cara penggunaan obat dengan sabar dan jelas. Harganya juga terjangkau!</p>
+          <div class="testi-footer">
+            <img src="https://i.pravatar.cc/100?img=11" alt="Ibu Rina" class="testi-avatar" />
+            <div>
+              <div class="testi-name">Ibu Rina Susanti</div>
+              <div class="testi-type">Pelanggan sejak 2020</div>
+            </div>
+            <span class="testi-tag">Obat Rutin</span>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Layanan antar obatnya sangat membantu waktu saya sedang sakit dan tidak bisa ke luar rumah. Pesannya mudah via WA, sampai cepat, dan obatnya asli. Recommended banget!</p>
+          <div class="testi-footer">
+            <img src="https://i.pravatar.cc/100?img=33" alt="Pak Dian" class="testi-avatar" />
+            <div>
+              <div class="testi-name">Pak Dian Wahyu</div>
+              <div class="testi-type">Pelanggan sejak 2021</div>
+            </div>
+            <span class="testi-tag">Antar Obat</span>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Saya rutin cek tensi dan gula darah di sini, gratis! Apotekernya juga memberikan saran yang sangat berguna untuk mengelola kondisi diabetes saya. Pelayanan terbaik.</p>
+          <div class="testi-footer">
+            <img src="https://i.pravatar.cc/100?img=47" alt="Ibu Fatimah" class="testi-avatar" />
+            <div>
+              <div class="testi-name">Ibu Fatimah Rahman</div>
+              <div class="testi-type">Pelanggan sejak 2019</div>
+            </div>
+            <span class="testi-tag">Cek Kesehatan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-img">
+        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80" alt="Konsultasi apoteker" />
+      </div>
+      <div>
+        <span class="cta-label">Konsultasi Gratis</span>
+        <h2 class="cta-title">Ada pertanyaan soal<br><em>obat atau kesehatan?</em></h2>
+        <p class="cta-desc">Hubungi apoteker kami kapan saja via WhatsApp. Gratis, cepat, dan terpercaya — karena kesehatan Anda adalah prioritas kami.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="konsultasi.html" class="btn-primary">💬 Konsultasi Sekarang</a>
+          <a href="produk.html" class="btn-outline-white">💊 Lihat Produk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs  = document.querySelectorAll('#homeTabs .p-tab');
+      const cards = document.querySelectorAll('#homeGrid .produk-card');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const filter = tab.dataset.filter;
+          cards.forEach(card => {
+            card.classList.toggle('visible', filter === 'all' || card.dataset.cat === filter);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

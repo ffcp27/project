@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak & Lokasi — Dapur Rempah</title>
+  <meta name="description" content="Temukan Dapur Rempah di Balaraja. Kontak, jam buka, lokasi toko, dan formulir pemesanan online." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1800&q=85" alt="Baker at work" class="page-hero-bg" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="section-label">Kunjungi Kami</span>
+      <h1 class="section-title">Kontak &<br><em>Lokasi Toko</em></h1>
+      <p class="section-desc">Temukan kami di Balaraja, pesan via WhatsApp, atau kunjungi langsung — kami selalu menyambut dengan senyum dan aroma roti segar.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="custom-section">
+    <div class="custom-inner">
+
+      <!-- LEFT: Info -->
+      <div>
+        <span class="section-label reveal" style="display:block;margin-bottom:0.8rem;">Informasi Toko</span>
+        <h2 class="section-title reveal" style="font-size:2rem;margin-bottom:2rem;">Cara <em>menghubungi</em> kami</h2>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">📍 Alamat</span>
+          <div class="ci-value">
+            Jl. Rempah Manis No. 12<br>
+            Permata Balaraja, Kec. Balaraja<br>
+            Kab. Tangerang, Banten 15660
+          </div>
+        </div>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">🕐 Jam Buka</span>
+          <table class="hours-table">
+            <tbody>
+              <tr id="row-weekday">
+                <td>Senin – Sabtu</td>
+                <td>07.00 – 20.00</td>
+              </tr>
+              <tr id="row-weekend">
+                <td>Minggu</td>
+                <td>08.00 – 17.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.77rem;color:var(--text-light);margin-top:0.7rem;font-weight:300;">* Stok bisa habis sebelum jam tutup — datang pagi untuk pilihan terlengkap!</p>
+        </div>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">📞 WhatsApp & Telepon</span>
+          <div class="ci-value">
+            <a href="tel:+6281356789012" style="color:var(--text-body);">+62 813-5678-9012</a><br>
+            <span style="font-size:0.78rem;color:var(--text-light);font-weight:300;">Aktif setiap hari saat jam buka</span>
+          </div>
+        </div>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">✉️ Email</span>
+          <div class="ci-value">
+            <a href="mailto:order@dapurrempah.id" style="color:var(--text-body);">order@dapurrempah.id</a><br>
+            <span style="font-size:0.78rem;color:var(--text-light);font-weight:300;">Dibalas dalam 1×24 jam</span>
+          </div>
+        </div>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">📱 Media Sosial & Marketplace</span>
+          <div class="ci-value">
+            Instagram: <strong style="color:var(--amber);">@dapurrempah.id</strong><br>
+            TikTok: <strong style="color:var(--amber);">@dapurrempah</strong><br>
+            Shopee: <strong style="color:var(--amber);">Dapur Rempah Official</strong>
+          </div>
+        </div>
+
+        <div class="map-box reveal">
+          🗺️
+          <p>Jl. Rempah Manis No. 12, Balaraja, Kab. Tangerang</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:1.2rem;font-size:0.72rem;">📍 Buka di Google Maps</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form Pesan -->
+      <div>
+        <div class="order-form-box reveal">
+          <div class="form-title-main">Pesan via Form Online</div>
+          <p class="form-subtitle-small">Isi form ini untuk memesan atau bertanya. Tim kami akan merespons via WhatsApp dalam waktu 2 jam saat jam buka. 🍫</p>
+
+          <div id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" class="form-input" placeholder="Nama kamu" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wa">Nomor WhatsApp</label>
+                <input type="tel" id="wa" class="form-input" placeholder="+62 8xx-xxxx-xxxx" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="keperluan">Keperluan</label>
+              <select id="keperluan" class="form-select">
+                <option value="">Pilih keperluan...</option>
+                <option>🛒 Pesan produk ready stock</option>
+                <option>🎁 Custom order / hampers</option>
+                <option>🚚 Tanya pengiriman</option>
+                <option>💬 Tanya produk / harga</option>
+                <option>🤝 Kerjasama / reseller</option>
+                <option>💌 Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="pesan">Pesan</label>
+              <textarea id="pesan" class="form-textarea" placeholder="Ceritakan pesanan atau pertanyaanmu di sini..."></textarea>
+            </div>
+
+            <button class="form-submit" id="submitContact" onclick="handleContact()">
+              Kirim Pesan 🍞
+            </button>
+
+            <p style="font-size:0.72rem;color:var(--text-light);text-align:center;margin-top:1rem;font-weight:300;">
+              Atau hubungi langsung via WhatsApp: <strong style="color:var(--amber);">+62 813-5678-9012</strong>
+            </p>
+          </div>
+
+          <!-- Success -->
+          <div class="form-success" id="contactSuccess">
+            <div style="font-size:3rem;margin-bottom:1rem;">🍞</div>
+            <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--choco);margin-bottom:0.8rem;">Pesan Terkirim!</h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.8;font-weight:300;">
+              Terima kasih sudah menghubungi Dapur Rempah! 🤎<br><br>
+              Tim kami akan membalasmu via WhatsApp dalam 2 jam saat jam operasional.
+            </p>
+            <button onclick="resetContact()" class="btn-outline-dark" style="margin-top:2rem;display:inline-flex;">Kirim Pesan Lain</button>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div style="margin-top:1.5rem; background:var(--choco); padding:2.5rem;" class="reveal">
+          <span class="section-label" style="margin-bottom:1.2rem;display:block;">Aksi Cepat</span>
+          <div style="display:flex;flex-direction:column;gap:0.8rem;">
+            <a href="https://wa.me/6281356789012" target="_blank" style="display:flex;align-items:center;gap:0.8rem;padding:0.9rem 1.2rem;background:rgba(200,129,58,0.08);border:1px solid rgba(200,129,58,0.15);color:var(--cream);font-size:0.85rem;font-weight:600;transition:background 0.3s;" onmouseover="this.style.background='rgba(200,129,58,0.16)'" onmouseout="this.style.background='rgba(200,129,58,0.08)'">
+              💬 Chat WhatsApp Sekarang
+            </a>
+            <a href="menu.html" style="display:flex;align-items:center;gap:0.8rem;padding:0.9rem 1.2rem;background:rgba(200,129,58,0.08);border:1px solid rgba(200,129,58,0.15);color:var(--cream);font-size:0.85rem;font-weight:600;transition:background 0.3s;" onmouseover="this.style.background='rgba(200,129,58,0.16)'" onmouseout="this.style.background='rgba(200,129,58,0.08)'">
+              🍞 Lihat Menu Lengkap
+            </a>
+            <a href="custom.html" style="display:flex;align-items:center;gap:0.8rem;padding:0.9rem 1.2rem;background:rgba(200,129,58,0.08);border:1px solid rgba(200,129,58,0.15);color:var(--cream);font-size:0.85rem;font-weight:600;transition:background 0.3s;" onmouseover="this.style.background='rgba(200,129,58,0.16)'" onmouseout="this.style.background='rgba(200,129,58,0.08)'">
+              🎁 Form Custom Order & Hampers
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function handleContact() {
+      const nama  = document.getElementById('nama').value.trim();
+      const wa    = document.getElementById('wa').value.trim();
+      const pesan = document.getElementById('pesan').value.trim();
+      if (!nama || !wa || !pesan) {
+        alert('Mohon isi nama, nomor WhatsApp, dan pesanmu ya! 🍫');
+        return;
+      }
+      const btn = document.getElementById('submitContact');
+      btn.textContent = 'Mengirim...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('contactSuccess').style.display = 'block';
+      }, 900);
+    }
+
+    function resetContact() {
+      ['nama','wa','pesan'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('keperluan').value = '';
+      document.getElementById('contactForm').style.display = 'block';
+      document.getElementById('contactSuccess').style.display = 'none';
+      const btn = document.getElementById('submitContact');
+      btn.textContent = 'Kirim Pesan 🍞';
+      btn.disabled = false;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const day = new Date().getDay();
+      const wdRow = document.getElementById('row-weekday');
+      const weRow = document.getElementById('row-weekend');
+      if (day >= 1 && day <= 6 && wdRow) wdRow.classList.add('today');
+      else if (day === 0 && weRow) weRow.classList.add('today');
+    });
+  </script>
+</body>
+</html>

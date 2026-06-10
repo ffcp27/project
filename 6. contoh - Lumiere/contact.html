@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking & Kontak — Lumière Beauty Clinic</title>
+  <meta name="description" content="Booking konsultasi dan treatment di Lumière Beauty Clinic Balaraja. Konsultasi pertama gratis." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=1800&q=85" alt="Clinic interior" class="page-hero-bg" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="section-label">Kami Menunggumu</span>
+      <h1 class="section-title">Booking & <em>Kontak</em></h1>
+      <p class="section-desc">Konsultasi pertama gratis. Ceritakan kondisi kulitmu dan tim dokter kami akan merancang treatment terbaik untukmu.</p>
+    </div>
+  </section>
+
+  <!-- KONTAK SECTION -->
+  <section class="kontak-section">
+    <div class="kontak-inner">
+
+      <!-- LEFT: Info -->
+      <div>
+        <span class="section-label reveal" style="display:block;margin-bottom:0.8rem;">Informasi Klinik</span>
+        <h2 class="section-title reveal" style="font-size:2rem;margin-bottom:2rem;">Temukan <em>kami</em></h2>
+
+        <div class="info-block reveal">
+          <span class="info-label">Alamat</span>
+          <div class="info-value">
+            Jl. Kecantikan Balaraja No. 27<br>
+            Permata Balaraja, Kec. Balaraja<br>
+            Kab. Tangerang, Banten 15660
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-label">Jam Operasional</span>
+          <table class="hours-table">
+            <tbody>
+              <tr id="row-weekday">
+                <td>Senin – Jumat</td>
+                <td>09.00 – 20.00</td>
+              </tr>
+              <tr id="row-sat">
+                <td>Sabtu</td>
+                <td>09.00 – 21.00</td>
+              </tr>
+              <tr id="row-sun">
+                <td>Minggu</td>
+                <td>10.00 – 18.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-label">Telepon & WhatsApp</span>
+          <div class="info-value">
+            <a href="tel:+6281122334455" style="color:var(--taupe);">+62 811-2233-4455</a><br>
+            <span style="font-size:0.77rem;color:var(--taupe-light);font-weight:300;">Aktif setiap hari selama jam buka</span>
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-label">Email</span>
+          <div class="info-value">
+            <a href="mailto:halo@lumiereclinic.id" style="color:var(--taupe);">halo@lumiereclinic.id</a><br>
+            <span style="font-size:0.77rem;color:var(--taupe-light);font-weight:300;">Respons dalam 1×24 jam</span>
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-label">Media Sosial</span>
+          <div class="info-value">
+            Instagram: <strong style="color:var(--gold);font-weight:500;">@lumiereclinic.id</strong><br>
+            TikTok: <strong style="color:var(--gold);font-weight:500;">@lumiereclinic</strong>
+          </div>
+        </div>
+
+        <div class="map-placeholder reveal">
+          ◈
+          <p>Jl. Kecantikan Balaraja No. 27, Permata Balaraja, Kab. Tangerang</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-gold" style="display:inline-block;margin-top:1.5rem;font-size:0.68rem;">Buka di Google Maps</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div>
+        <div class="contact-form-box reveal">
+          <div class="form-title-main">Booking Konsultasi</div>
+          <p class="form-subtitle-main">Konsultasi pertama <strong style="color:var(--gold);">gratis</strong> tanpa komitmen. Dokter kami akan membantu menentukan treatment yang paling sesuai.</p>
+
+          <div id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Nama Lengkap</label>
+                <input type="text" id="fullName" class="form-input" placeholder="Nama kamu" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Nomor WhatsApp</label>
+                <input type="tel" id="phone" class="form-input" placeholder="+62 8xx-xxxx-xxxx" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" class="form-input" placeholder="kamu@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="treatment">Treatment yang Diminati</label>
+              <select id="treatment" class="form-select">
+                <option value="">Pilih treatment...</option>
+                <option value="konsultasi">✦ Konsultasi Gratis (First Visit)</option>
+                <option value="facial">Luxury Deep Cleansing Facial</option>
+                <option value="laser">Laser Brightening & Resurfacing</option>
+                <option value="peel">Medical-Grade Chemical Peeling</option>
+                <option value="microneedling">Microneedling RF Collagen Induction</option>
+                <option value="antiaging">Comprehensive Anti-Aging Therapy</option>
+                <option value="acne">Acne & Scar Management</option>
+                <option value="other">Lainnya / Belum Tahu</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="prefDate">Tanggal Preferensi</label>
+                <input type="date" id="prefDate" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="prefTime">Waktu Preferensi</label>
+                <select id="prefTime" class="form-select">
+                  <option value="">Pilih waktu...</option>
+                  <option>09.00 – 11.00</option>
+                  <option>11.00 – 13.00</option>
+                  <option>13.00 – 15.00</option>
+                  <option>15.00 – 17.00</option>
+                  <option>17.00 – 19.00</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="skinConcern">Keluhan / Kondisi Kulit</label>
+              <textarea id="skinConcern" class="form-textarea" placeholder="Ceritakan kondisi kulitmu — flek, jerawat, keriput, kulit kusam, dll. Semakin detail semakin baik untuk persiapan konsultasi."></textarea>
+            </div>
+
+            <button class="form-submit" id="submitBtn" onclick="handleBooking()">
+              Kirim Permintaan Booking ✦
+            </button>
+
+            <p style="font-size:0.72rem;color:var(--taupe-light);text-align:center;margin-top:1rem;font-weight:300;">
+              Tim kami akan menghubungi dalam 1×24 jam untuk konfirmasi jadwal.
+            </p>
+          </div>
+
+          <!-- Success -->
+          <div class="form-success" id="bookingSuccess">
+            <div style="font-size:3rem;margin-bottom:1rem;">✦</div>
+            <h3 style="font-family:'Marcellus',serif;font-size:1.7rem;color:var(--obsidian);letter-spacing:0.05em;margin-bottom:0.8rem;">Booking Diterima</h3>
+            <p style="font-size:0.9rem;color:var(--taupe);line-height:1.8;font-weight:300;">Terima kasih. Tim Lumière akan menghubungi kamu dalam 1×24 jam untuk konfirmasi jadwal konsultasi.<br><br>Sampai jumpa di klinik kami. ✦</p>
+            <button onclick="resetBooking()" class="btn-outline-dark" style="margin-top:2rem;display:inline-block;">Buat Booking Lain</button>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="margin-top:1.5rem;background:var(--ivory-warm);padding:2.5rem;" class="reveal">
+          <span class="section-label" style="margin-bottom:1.5rem;display:block;">Pertanyaan Umum</span>
+          <div id="faqContainer"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function handleBooking() {
+      const name    = document.getElementById('fullName').value.trim();
+      const phone   = document.getElementById('phone').value.trim();
+      const concern = document.getElementById('skinConcern').value.trim();
+
+      if (!name || !phone || !concern) {
+        alert('Mohon isi nama, nomor WhatsApp, dan keluhan kulitmu untuk melanjutkan booking.');
+        return;
+      }
+
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Mengirim...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        document.getElementById('bookingForm').style.display = 'none';
+        document.getElementById('bookingSuccess').style.display = 'block';
+      }, 1000);
+    }
+
+    function resetBooking() {
+      ['fullName','phone','email','skinConcern'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      ['treatment','prefTime'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('bookingForm').style.display = 'block';
+      document.getElementById('bookingSuccess').style.display = 'none';
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Kirim Permintaan Booking ✦';
+      btn.disabled = false;
+    }
+
+    // FAQ
+    const faqs = [
+      { q: 'Apakah konsultasi pertama benar-benar gratis?', a: 'Ya, konsultasi perdana dengan dokter kami 100% gratis tanpa biaya tersembunyi dan tanpa kewajiban untuk langsung memulai treatment. Ini adalah sesi untuk mengenal kondisi kulitmu.' },
+      { q: 'Berapa lama satu sesi treatment?', a: 'Tergantung treatment-nya. Luxury Facial sekitar 60–90 menit. Laser treatment 30–60 menit. Konsultasi awal biasanya 20–30 menit. Tim kami akan menginformasikan estimasi durasi saat konfirmasi booking.' },
+      { q: 'Apakah ada efek samping yang perlu dikhawatirkan?', a: 'Setiap treatment memiliki profil risiko yang berbeda dan akan dijelaskan secara transparan oleh dokter sebelum prosedur dimulai. Dokter kami selalu memprioritaskan keamanan dan tidak akan merekomendasikan treatment yang tidak sesuai kondisi kulitmu.' },
+      { q: 'Bolehkah datang tanpa booking?', a: 'Walk-in diperbolehkan, namun sangat disarankan booking terlebih dahulu untuk menghindari waktu tunggu yang lama — terutama untuk treatment yang memerlukan persiapan khusus.' },
+      { q: 'Berapa kali harus datang untuk melihat hasil?', a: 'Berbeda untuk setiap treatment. Hasil facial terlihat langsung. Laser dan chemical peel biasanya 3–6 sesi untuk hasil optimal. Dokter akan memberikan rencana treatment yang jelas pada sesi konsultasi.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('faqContainer');
+      faqs.forEach((faq, i) => {
+        const el = document.createElement('div');
+        el.style.borderBottom = '1px solid rgba(201,169,110,0.15)';
+        el.innerHTML = `
+          <button onclick="toggleFaq(${i})" style="width:100%;text-align:left;padding:1.2rem 0;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'Raleway',sans-serif;">
+            <span style="font-size:0.88rem;font-weight:600;color:var(--obsidian-3);letter-spacing:0.02em;">${faq.q}</span>
+            <span id="faq-icon-${i}" style="color:var(--gold);font-size:1rem;flex-shrink:0;transition:transform 0.3s;font-family:'Marcellus',serif;">+</span>
+          </button>
+          <div id="faq-body-${i}" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;">
+            <p style="font-size:0.85rem;color:var(--taupe);line-height:1.8;padding-bottom:1.2rem;font-weight:300;">${faq.a}</p>
+          </div>
+        `;
+        container.appendChild(el);
+      });
+
+      // Highlight hari ini
+      const day = new Date().getDay();
+      const wd  = document.getElementById('row-weekday');
+      const sat = document.getElementById('row-sat');
+      const sun = document.getElementById('row-sun');
+      if      (day >= 1 && day <= 5 && wd)  wd.classList.add('today');
+      else if (day === 6 && sat)             sat.classList.add('today');
+      else if (day === 0 && sun)             sun.classList.add('today');
+
+      // Set min date to today
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('prefDate');
+      if (dateInput) dateInput.min = today;
+    });
+
+    function toggleFaq(i) {
+      const body = document.getElementById(`faq-body-${i}`);
+      const icon = document.getElementById(`faq-icon-${i}`);
+      const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+      faqs.forEach((_, j) => {
+        document.getElementById(`faq-body-${j}`).style.maxHeight = '0px';
+        document.getElementById(`faq-icon-${j}`).textContent = '+';
+      });
+      if (!isOpen) {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</body>
+</html>

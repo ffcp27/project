@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Class — Forma Pilates Studio</title>
+  <meta name="description" content="Booking kelas pilates Forma Studio. Isi formulir, pilih kelas dan jadwal, dan klaim sesi gratis pertamamu." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1579126038374-6064e9370f0f?w=1800&q=85" alt="Pilates class" class="page-hero-bg" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="sec-label">Mulai Sekarang</span>
+      <h1 class="sec-title">Book a <em>Class</em></h1>
+      <p class="sec-desc">Kunjungan pertama gratis — tidak perlu pengalaman pilates sebelumnya. Cukup datang, kami yang urus sisanya.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section class="booking-section">
+    <div class="booking-inner">
+
+      <!-- LEFT: Info -->
+      <div>
+        <span class="sec-label reveal" style="display:block;margin-bottom:0.8rem;">Informasi Studio</span>
+        <h2 class="sec-title reveal" style="font-size:2rem;margin-bottom:2rem;">Temukan <em>kami</em></h2>
+
+        <div class="b-info-card reveal">
+          <span class="b-info-label">📍 Alamat</span>
+          <div class="b-info-value">
+            Jl. Forma Raya No. 14<br>
+            Permata Balaraja, Kab. Tangerang<br>
+            Banten 15660
+          </div>
+        </div>
+
+        <div class="b-info-card reveal">
+          <span class="b-info-label">🕐 Jam Buka</span>
+          <table class="hours-table">
+            <tbody>
+              <tr id="row-weekday">
+                <td>Senin – Jumat</td>
+                <td>06.00 – 21.00</td>
+              </tr>
+              <tr id="row-sat">
+                <td>Sabtu</td>
+                <td>07.00 – 19.00</td>
+              </tr>
+              <tr id="row-sun">
+                <td>Minggu</td>
+                <td>08.00 – 16.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="b-info-card reveal">
+          <span class="b-info-label">📞 WhatsApp & Telepon</span>
+          <div class="b-info-value">
+            <a href="tel:+6281299887766" style="color:var(--text-body);">+62 812-9988-7766</a><br>
+            <span style="font-size:0.78rem;color:var(--text-light);font-weight:300;">Aktif setiap hari selama jam buka</span>
+          </div>
+        </div>
+
+        <div class="b-info-card reveal">
+          <span class="b-info-label">✉️ Email & Sosial</span>
+          <div class="b-info-value">
+            <a href="mailto:hello@formastudio.id" style="color:var(--text-body);">hello@formastudio.id</a><br>
+            Instagram: <strong style="color:var(--terra);">@formastudio.id</strong>
+          </div>
+        </div>
+
+        <div style="background:var(--silk-warm);padding:3rem 2rem;text-align:center;margin-top:1rem;font-size:2.5rem;border-left:2px solid rgba(196,103,74,0.25);" class="reveal">
+          🗺️
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-top:0.5rem;font-weight:300;">Permata Balaraja, Kab. Tangerang</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-terra" style="display:inline-flex;margin-top:1.2rem;font-size:0.65rem;">Buka di Google Maps</a>
+        </div>
+
+        <!-- Jadwal hari ini quick view -->
+        <div style="margin-top:1.5rem; background:var(--stone); padding:2rem;" class="reveal">
+          <span class="sec-label" style="color:var(--terra);margin-bottom:1.2rem;display:block;">Kelas Tersedia Hari Ini</span>
+          <div style="display:flex;flex-direction:column;gap:0.7rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.7rem 0;border-bottom:1px solid rgba(250,247,242,0.05);">
+              <div>
+                <span style="font-family:'Bodoni Moda',serif;font-size:0.95rem;color:var(--silk);">06.30 Mat Pilates</span>
+                <span style="display:block;font-size:0.75rem;color:rgba(250,247,242,0.3);font-style:italic;">Dinda Pratiwi</span>
+              </div>
+              <button class="btn-book-slot" onclick="bookClass('Mat 06.30')">3 slot</button>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.7rem 0;border-bottom:1px solid rgba(250,247,242,0.05);">
+              <div>
+                <span style="font-family:'Bodoni Moda',serif;font-size:0.95rem;color:var(--silk);">09.30 Prenatal</span>
+                <span style="display:block;font-size:0.75rem;color:rgba(250,247,242,0.3);font-style:italic;">Maya Sartika</span>
+              </div>
+              <button class="btn-book-slot" onclick="bookClass('Prenatal 09.30')">4 slot</button>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.7rem 0;border-bottom:1px solid rgba(250,247,242,0.05);">
+              <div>
+                <span style="font-family:'Bodoni Moda',serif;font-size:0.95rem;color:var(--silk);">17.30 Flexibility Flow</span>
+                <span style="display:block;font-size:0.75rem;color:rgba(250,247,242,0.3);font-style:italic;">Laras Handini</span>
+              </div>
+              <button class="btn-book-slot full">Full</button>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:0.7rem 0;">
+              <div>
+                <span style="font-family:'Bodoni Moda',serif;font-size:0.95rem;color:var(--silk);">19.00 Mat Pilates</span>
+                <span style="display:block;font-size:0.75rem;color:rgba(250,247,242,0.3);font-style:italic;">Ariani Wijaya</span>
+              </div>
+              <button class="btn-book-slot" onclick="bookClass('Mat 19.00')">6 slot</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Booking Form -->
+      <div>
+        <div class="booking-form-box reveal">
+          <div class="form-title-main">Book Your<br>First Class</div>
+          <p class="form-subtitle-small">Sesi pertama gratis. Isi form di bawah dan tim kami akan mengkonfirmasi bookingmu dalam 2 jam. ✦</p>
+
+          <div id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" class="form-input" placeholder="Nama kamu" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wa">Nomor WhatsApp</label>
+                <input type="tel" id="wa" class="form-input" placeholder="+62 8xx-xxxx-xxxx" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" class="form-input" placeholder="email@kamu.com" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="kelas">Kelas yang Diminati</label>
+              <select id="kelas" class="form-select">
+                <option value="">Pilih kelas...</option>
+                <option value="mat">Mat Pilates (Rp 120.000)</option>
+                <option value="reformer">Reformer Pilates (Rp 175.000)</option>
+                <option value="prenatal">Prenatal & Postnatal (Rp 150.000)</option>
+                <option value="core">Core & Strength (Rp 130.000)</option>
+                <option value="flexibility">Flexibility Flow (Rp 120.000)</option>
+                <option value="private">Private Session (Rp 350.000)</option>
+                <option value="free-trial">Free Trial — Pertama Gratis ✦</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="tanggal">Tanggal</label>
+                <input type="date" id="tanggal" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="waktu">Preferensi Waktu</label>
+                <select id="waktu" class="form-select">
+                  <option value="">Pilih waktu...</option>
+                  <option>06.00 – 09.00 (Pagi)</option>
+                  <option>09.00 – 12.00 (Mid-Morning)</option>
+                  <option>12.00 – 15.00 (Siang)</option>
+                  <option>15.00 – 18.00 (Sore)</option>
+                  <option>18.00 – 21.00 (Malam)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="level">Level Pengalaman</label>
+              <select id="level" class="form-select">
+                <option value="">Pilih level...</option>
+                <option>Pemula (Belum pernah pilates)</option>
+                <option>Beginner (1–6 bulan)</option>
+                <option>Intermediate (6–18 bulan)</option>
+                <option>Advanced (18+ bulan)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="catatan">Catatan / Kondisi Khusus</label>
+              <textarea id="catatan" class="form-textarea" placeholder="Ceritakan kondisi fisik, cedera, atau kebutuhan khusus yang perlu instruktur ketahui (opsional)..."></textarea>
+            </div>
+
+            <button class="form-submit" id="submitBooking" onclick="handleBooking()">
+              Konfirmasi Booking →
+            </button>
+
+            <p style="font-size:0.68rem;color:rgba(250,247,242,0.2);text-align:center;margin-top:1rem;font-weight:300;letter-spacing:0.05em;">
+              Konfirmasi jadwal akan dikirim via WhatsApp dalam 2 jam.
+            </p>
+          </div>
+
+          <!-- Success -->
+          <div class="form-success" id="bookingSuccess">
+            <div style="font-size:3rem;margin-bottom:1.2rem;">✦</div>
+            <h3 style="font-family:'Bodoni Moda',serif;font-size:1.8rem;font-weight:300;color:var(--silk);letter-spacing:0.05em;margin-bottom:0.8rem;">Booking Diterima</h3>
+            <p style="font-size:0.92rem;color:rgba(250,247,242,0.5);line-height:1.85;font-weight:300;">
+              Tim Forma akan menghubungimu via WhatsApp untuk konfirmasi jadwal dan detail kelas dalam 2 jam.<br><br>
+              <em style="color:var(--terra-light);">Move with intention. See you at the studio. ✦</em>
+            </p>
+            <button onclick="resetBooking()" class="btn-outline-silk" style="margin-top:2rem;display:inline-flex;font-size:0.65rem;">Book Kelas Lain</button>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="margin-top:1.5rem; background:var(--silk-warm); padding:2.5rem;" class="reveal">
+          <span class="sec-label" style="margin-bottom:1.2rem;display:block;">FAQ</span>
+          <div id="faqContainer"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function handleBooking() {
+      const nama  = document.getElementById('nama').value.trim();
+      const wa    = document.getElementById('wa').value.trim();
+      const kelas = document.getElementById('kelas').value;
+      if (!nama || !wa || !kelas) {
+        alert('Mohon isi nama, nomor WhatsApp, dan pilih kelas terlebih dahulu.');
+        return;
+      }
+      const btn = document.getElementById('submitBooking');
+      btn.textContent = 'Memproses...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('bookingForm').style.display = 'none';
+        document.getElementById('bookingSuccess').style.display = 'block';
+      }, 1000);
+    }
+
+    function resetBooking() {
+      ['nama','wa','email','catatan','tanggal'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      ['kelas','waktu','level'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('bookingForm').style.display = 'block';
+      document.getElementById('bookingSuccess').style.display = 'none';
+      const btn = document.getElementById('submitBooking');
+      btn.textContent = 'Konfirmasi Booking →';
+      btn.disabled = false;
+    }
+
+    const faqs = [
+      { q: 'Perlu bawa apa ke kelas?', a: 'Cukup bawa diri dan semangat! Matras, resistance band, dan semua peralatan disediakan. Kenakan pakaian olahraga yang nyaman dan tidak terlalu longgar agar instruktur bisa melihat alignment tubuhmu.' },
+      { q: 'Berapa lama sebelum kelas saya harus tiba?', a: 'Kami minta kamu tiba 10–15 menit sebelum kelas pertama untuk orientasi singkat dengan instruktur. Untuk kelas selanjutnya, 5 menit sebelum kelas sudah cukup.' },
+      { q: 'Bagaimana jika saya perlu batalkan booking?', a: 'Pembatalan dapat dilakukan minimal 4 jam sebelum kelas via WhatsApp. Pembatalan kurang dari 4 jam akan dikenakan biaya 50% dari harga kelas (kecuali keadaan darurat).' },
+      { q: 'Apakah aman untuk yang punya cedera?', a: 'Ya, pilates dikenal sebagai latihan yang ramah untuk rehabilitasi. Informasikan kondisi cederamu di form booking agar instruktur dapat menyesuaikan gerakan. Untuk kondisi serius, konsultasikan dulu dengan doktermu.' },
+      { q: 'Bisakah saya mencoba berbagai kelas dalam satu membership?', a: 'Tentu! Paket Member Bulanan dan Unlimited berlaku untuk semua jenis kelas group. Kamu bebas mix & match sesuai mood dan kebutuhanmu setiap minggunya.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('faqContainer');
+      faqs.forEach((faq, i) => {
+        const el = document.createElement('div');
+        el.style.borderBottom = '1px solid rgba(28,25,22,0.07)';
+        el.innerHTML = `
+          <button onclick="toggleFaq(${i})" style="width:100%;text-align:left;padding:1.1rem 0;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'DM Sans',sans-serif;">
+            <span style="font-size:0.88rem;font-weight:400;color:var(--stone);">${faq.q}</span>
+            <span id="faq-icon-${i}" style="color:var(--terra);font-size:1rem;flex-shrink:0;font-family:'Bodoni Moda',serif;">+</span>
+          </button>
+          <div id="faq-body-${i}" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;">
+            <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.8;padding-bottom:1.1rem;font-weight:300;">${faq.a}</p>
+          </div>
+        `;
+        container.appendChild(el);
+      });
+
+      const day = new Date().getDay();
+      const wdRow  = document.getElementById('row-weekday');
+      const satRow = document.getElementById('row-sat');
+      const sunRow = document.getElementById('row-sun');
+      if (day >= 1 && day <= 5 && wdRow)  wdRow.classList.add('today');
+      else if (day === 6 && satRow)        satRow.classList.add('today');
+      else if (day === 0 && sunRow)        sunRow.classList.add('today');
+
+      const today = new Date().toISOString().split('T')[0];
+      const dateEl = document.getElementById('tanggal');
+      if (dateEl) dateEl.min = today;
+    });
+
+    function toggleFaq(i) {
+      const body = document.getElementById(`faq-body-${i}`);
+      const icon = document.getElementById(`faq-icon-${i}`);
+      const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+      faqs.forEach((_, j) => {
+        document.getElementById(`faq-body-${j}`).style.maxHeight = '0px';
+        document.getElementById(`faq-icon-${j}`).textContent = '+';
+      });
+      if (!isOpen) {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</body>
+</html>

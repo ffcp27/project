@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservasi — Saung Kuring</title>
+  <meta name="description" content="Reservasi meja di Saung Kuring. Pilih saung lesehan, meja indoor, atau paket katering untuk acara spesial."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?w=1800&q=85" alt="Meja makan Sunda" class="page-hero-bg"/>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Beranda</a><span class="bc-sep">/</span><span>Reservasi</span></div>
+      <span class="sec-label">Pesan Tempat</span>
+      <h1 class="sec-title">Reservasi & <em>Kontak</em></h1>
+      <p class="sec-desc">Pastikan meja favorit Anda tersedia — terutama saung tepi kolam yang selalu habis duluan di akhir pekan.</p>
+    </div>
+  </section>
+
+  <!-- RESERVASI SECTION -->
+  <section class="reservasi-section">
+    <div class="reservasi-inner">
+
+      <!-- LEFT: Info -->
+      <div>
+        <span class="sec-label reveal" style="display:block; margin-bottom:1rem;">Informasi Restoran</span>
+        <h2 class="sec-title reveal" style="font-size:2rem; margin-bottom:2rem;">Temukan <em>kami</em></h2>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">📍 Alamat</span>
+          <div class="info-block-value">
+            Jl. Raya Sunda No. 12<br>
+            Permata Balaraja, Kec. Balaraja<br>
+            Kab. Tangerang, Banten 15660
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">🌿 Jam Buka</span>
+          <table class="hours-table">
+            <tbody>
+              <tr id="row-weekday">
+                <td>Senin – Jumat</td>
+                <td>10.00 – 22.00</td>
+              </tr>
+              <tr id="row-weekend">
+                <td>Sabtu – Minggu</td>
+                <td>09.00 – 23.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.75rem; color:var(--teks-light); margin-top:0.6rem; font-style:italic; font-weight:300;">* Dapur tutup 1 jam sebelum jam tutup restoran.</p>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">📞 Telepon & WhatsApp</span>
+          <div class="info-block-value">
+            <a href="tel:+6281377778888" style="color:var(--warna-teks);">+62 813-7777-8888</a><br>
+            <span style="font-size:0.78rem; color:var(--teks-light);">WA aktif setiap hari saat jam buka</span>
+          </div>
+        </div>
+
+        <div class="info-block reveal">
+          <span class="info-block-label">✉️ Email & Sosial</span>
+          <div class="info-block-value">
+            <a href="mailto:hatur@saungkuring.id" style="color:var(--warna-teks);">hatur@saungkuring.id</a><br>
+            Instagram: <strong style="color:var(--bambu);">@saungkuring.id</strong><br>
+            TikTok: <strong style="color:var(--bambu);">@saungkuring</strong>
+          </div>
+        </div>
+
+        <!-- Pilihan area duduk -->
+        <div class="info-block reveal" style="border-left-color:var(--daun);">
+          <span class="info-block-label" style="color:var(--daun);">🏕️ Area Tersedia</span>
+          <div style="display:flex;flex-direction:column;gap:0.7rem;margin-top:0.4rem;">
+            <div style="display:flex;gap:0.6rem;align-items:flex-start;">
+              <span style="color:var(--bambu);font-size:0.82rem;margin-top:1px;">◆</span>
+              <div>
+                <div style="font-weight:600;font-size:0.88rem;color:var(--hutan);">Saung Tepi Kolam</div>
+                <div style="font-size:0.75rem;color:var(--teks-light);">Lesehan · Kapasitas 4–10 orang</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.6rem;align-items:flex-start;">
+              <span style="color:var(--bambu);font-size:0.82rem;margin-top:1px;">◆</span>
+              <div>
+                <div style="font-weight:600;font-size:0.88rem;color:var(--hutan);">Area Indoor</div>
+                <div style="font-size:0.75rem;color:var(--teks-light);">Ber-AC · Berbagai ukuran meja</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.6rem;align-items:flex-start;">
+              <span style="color:var(--bambu);font-size:0.82rem;margin-top:1px;">◆</span>
+              <div>
+                <div style="font-weight:600;font-size:0.88rem;color:var(--hutan);">Ruang Keluarga</div>
+                <div style="font-size:0.75rem;color:var(--teks-light);">Privat · Min. 15 orang</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-box reveal">
+          🗺️
+          <p>Jl. Raya Sunda No. 12, Permata Balaraja, Kab. Tangerang</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-bambu" style="display:inline-flex; margin-top:1.3rem; font-size:0.68rem;">📍 Buka di Google Maps</a>
+        </div>
+
+        <!-- Quick links -->
+        <div style="margin-top:0.8rem; background:var(--hutan); padding:2rem;" class="reveal">
+          <span class="sec-label" style="color:var(--bambu-light); margin-bottom:1.2rem; display:block;">Aksi Cepat</span>
+          <div style="display:flex; flex-direction:column; gap:0.7rem;">
+            <a href="https://wa.me/6281377778888?text=Assalamualaikum%2C+saya+mau+reservasi+meja+di+Saung+Kuring" target="_blank" style="display:flex;align-items:center;gap:0.8rem;padding:0.85rem 1.2rem;background:rgba(212,169,106,0.08);border:1px solid rgba(212,169,106,0.15);color:rgba(250,246,238,0.8);font-family:'Josefin Sans',sans-serif;font-size:0.82rem;font-weight:600;transition:background 0.3s;" onmouseover="this.style.background='rgba(212,169,106,0.16)'" onmouseout="this.style.background='rgba(212,169,106,0.08)'">
+              💬 WhatsApp Reservasi
+            </a>
+            <a href="menu.html" style="display:flex;align-items:center;gap:0.8rem;padding:0.85rem 1.2rem;background:rgba(212,169,106,0.08);border:1px solid rgba(212,169,106,0.15);color:rgba(250,246,238,0.8);font-family:'Josefin Sans',sans-serif;font-size:0.82rem;font-weight:600;transition:background 0.3s;" onmouseover="this.style.background='rgba(212,169,106,0.16)'" onmouseout="this.style.background='rgba(212,169,106,0.08)'">
+              🍃 Lihat Menu Lengkap
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div>
+        <div class="form-box-sunda reveal">
+          <div class="form-title-sunda">Pesan Meja<br>Sekarang</div>
+          <p class="form-subtitle-sunda">
+            Isi form di bawah ini dan tim kami akan mengkonfirmasi reservasimu dalam 1–2 jam melalui WhatsApp. Wilujeng sumping! 🌿
+          </p>
+
+          <div id="reservasiForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" id="nama" class="form-input" placeholder="Nama pemesan"/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nomor WhatsApp</label>
+                <input type="tel" id="wa" class="form-input" placeholder="+62 8xx-xxxx-xxxx"/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Tanggal Kunjungan</label>
+                <input type="date" id="tanggal" class="form-input"/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Jam Kunjungan</label>
+                <select id="jam" class="form-select">
+                  <option value="">Pilih jam...</option>
+                  <option>10.00 – 12.00</option>
+                  <option>12.00 – 14.00</option>
+                  <option>14.00 – 16.00</option>
+                  <option>16.00 – 18.00</option>
+                  <option>18.00 – 20.00</option>
+                  <option>20.00 – 22.00</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Jumlah Tamu</label>
+                <select id="jumlah" class="form-select">
+                  <option value="">Pilih jumlah...</option>
+                  <option>1–2 orang</option>
+                  <option>3–5 orang</option>
+                  <option>6–10 orang</option>
+                  <option>11–20 orang</option>
+                  <option>21–50 orang (acara)</option>
+                  <option>Di atas 50 orang</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Pilihan Area</label>
+                <select id="area" class="form-select">
+                  <option value="">Pilih area...</option>
+                  <option>🏕️ Saung Tepi Kolam</option>
+                  <option>🏠 Area Indoor</option>
+                  <option>👨‍👩‍👧 Ruang Keluarga (privat)</option>
+                  <option>Bebas / Terserah</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Keperluan / Acara Spesial</label>
+              <select id="acara" class="form-select">
+                <option value="">Pilih...</option>
+                <option>Makan Keluarga Biasa</option>
+                <option>Ulang Tahun</option>
+                <option>Arisan / Gathering</option>
+                <option>Reuni</option>
+                <option>Syukuran / Pengajian</option>
+                <option>Rapat / Meeting</option>
+                <option>Katering Acara Besar</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Permintaan Khusus (Opsional)</label>
+              <textarea id="catatan" class="form-textarea" placeholder="Ada alergi makanan, dekorasi ulang tahun, atau permintaan lainnya? Ceritakan di sini..."></textarea>
+            </div>
+
+            <button class="form-submit" id="submitBtn" onclick="handleReservasi()">
+              🌿 Konfirmasi Reservasi
+            </button>
+
+            <p style="font-family:'Josefin Sans',sans-serif; font-size:0.68rem; color:rgba(250,246,238,0.25); text-align:center; margin-top:1rem; font-weight:300; line-height:1.6;">
+              Tim kami akan menghubungi via WhatsApp untuk konfirmasi dalam 1–2 jam saat jam operasional.
+            </p>
+          </div>
+
+          <!-- Success -->
+          <div class="form-success" id="reservasiSuccess">
+            <div style="font-size:3rem; margin-bottom:1rem;">🌿</div>
+            <h3 style="font-family:'Playfair Display',serif; font-size:2rem; font-weight:500; color:var(--kain); margin-bottom:0.8rem; letter-spacing:0.03em;">Hatur Nuhun!</h3>
+            <p style="font-family:'Josefin Sans',sans-serif; font-size:0.92rem; color:rgba(250,246,238,0.45); line-height:1.85; font-weight:300;">
+              Reservasi Anda sudah kami terima. Tim Saung Kuring akan menghubungi kamu via WhatsApp untuk konfirmasi meja dalam 1–2 jam.<br><br>
+              <em style="color:var(--bambu-light); font-family:'Lora',serif; font-style:italic;">Wilujeng sumping — selamat datang! 🌿</em>
+            </p>
+            <button onclick="resetForm()" class="btn-outline-kain" style="margin-top:2rem; display:inline-flex; font-size:0.68rem;">Buat Reservasi Lain</button>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="margin-top:1rem; background:var(--kain-warm); border:1px solid rgba(212,169,106,0.12); padding:2.5rem;" class="reveal">
+          <span class="sec-label" style="margin-bottom:1.5rem; display:block;">Pertanyaan Umum</span>
+          <div id="faqContainer"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function handleReservasi() {
+      const nama   = document.getElementById('nama').value.trim();
+      const wa     = document.getElementById('wa').value.trim();
+      const tgl    = document.getElementById('tanggal').value;
+      const jumlah = document.getElementById('jumlah').value;
+
+      if (!nama || !wa || !tgl || !jumlah) {
+        showToast('⚠️ Mohon isi nama, WA, tanggal, dan jumlah tamu.');
+        return;
+      }
+
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = 'Memproses...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        document.getElementById('reservasiForm').style.display  = 'none';
+        document.getElementById('reservasiSuccess').style.display = 'block';
+      }, 900);
+    }
+
+    function resetForm() {
+      ['nama','wa','catatan','tanggal'].forEach(id => document.getElementById(id).value = '');
+      ['jam','jumlah','area','acara'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('reservasiForm').style.display  = 'block';
+      document.getElementById('reservasiSuccess').style.display = 'none';
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = '🌿 Konfirmasi Reservasi';
+      btn.disabled = false;
+    }
+
+    const faqs = [
+      { q: '🏕️ Apakah saung tepi kolam selalu tersedia?', a: 'Saung tepi kolam adalah area paling populer kami, terutama di akhir pekan. Sangat disarankan untuk reservasi minimal H-1. Kapasitas per saung 4–10 orang.' },
+      { q: '📅 Berapa jauh sebelumnya harus reservasi?', a: 'Untuk makan biasa, reservasi H-1 sudah cukup. Untuk acara (ulang tahun, arisan, reuni), kami sarankan 3–7 hari sebelumnya agar persiapan dekorasi dan menu bisa kami siapkan dengan baik.' },
+      { q: '🎂 Apakah bisa bawa kue ulang tahun sendiri?', a: 'Tentu boleh! Kami bahkan menyediakan layanan dekorasi meja ulang tahun gratis jika diinformasikan saat reservasi. Tidak ada biaya corkage untuk kue dari luar.' },
+      { q: '🍽️ Apakah ada menu paket untuk grup?', a: 'Ya! Kami punya paket prasmanan mulai dari Rp 65.000/orang (min. 20 orang) yang mencakup nasi, 3 lauk, 2 sayur, lalapan, sambal, dan minuman. Hubungi kami untuk menu lengkap dan penawaran khusus.' },
+      { q: '🌙 Apakah bisa makan di sini hingga malam?', a: 'Weekday kami buka sampai pukul 22.00, weekend sampai 23.00. Dapur tutup 1 jam sebelum jam tutup restoran, jadi pastikan Anda sudah memesan sebelum itu.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('faqContainer');
+      faqs.forEach((faq, i) => {
+        const el = document.createElement('div');
+        el.style.borderBottom = '1px solid rgba(212,169,106,0.12)';
+        el.innerHTML = `
+          <button onclick="toggleFaq(${i})" style="width:100%;text-align:left;padding:1.2rem 0;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'Josefin Sans',sans-serif;">
+            <span style="font-size:0.9rem;font-weight:600;color:var(--hutan);">${faq.q}</span>
+            <span id="faq-icon-${i}" style="color:var(--bambu);font-size:1.1rem;flex-shrink:0;font-family:'Playfair Display',serif;">+</span>
+          </button>
+          <div id="faq-body-${i}" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;">
+            <p style="font-family:'Josefin Sans',sans-serif;font-size:0.86rem;color:var(--teks-muted);line-height:1.8;padding-bottom:1.2rem;font-weight:300;">${faq.a}</p>
+          </div>
+        `;
+        container.appendChild(el);
+      });
+
+      const day = new Date().getDay();
+      const wdRow = document.getElementById('row-weekday');
+      const weRow = document.getElementById('row-weekend');
+      if (day >= 1 && day <= 5 && wdRow) wdRow.classList.add('today');
+      else if ((day === 0 || day === 6) && weRow) weRow.classList.add('today');
+
+      const today = new Date().toISOString().split('T')[0];
+      const dateEl = document.getElementById('tanggal');
+      if (dateEl) dateEl.min = today;
+    });
+
+    function toggleFaq(i) {
+      const body = document.getElementById(`faq-body-${i}`);
+      const icon = document.getElementById(`faq-icon-${i}`);
+      const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+      faqs.forEach((_, j) => {
+        document.getElementById(`faq-body-${j}`).style.maxHeight = '0px';
+        document.getElementById(`faq-icon-${j}`).textContent = '+';
+      });
+      if (!isOpen) {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</body>
+</html>

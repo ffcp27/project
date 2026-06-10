@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesan Custom & Hampers — Dapur Rempah</title>
+  <meta name="description" content="Custom order Dapur Rempah: brownies custom, hampers lebaran, parcel ulang tahun, kue pernikahan, dan paket gift untuk segala acara." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=1800&q=85" alt="Custom cake" class="page-hero-bg" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="section-label">Pesan Sesuai Keinginanmu</span>
+      <h1 class="section-title">Custom Order &<br><em>Hampers</em></h1>
+      <p class="section-desc">Dari hampers lebaran hingga kue ulang tahun custom — kami siap mewujudkan pesanan impianmu dengan cita rasa terbaik.</p>
+    </div>
+  </section>
+
+  <!-- PAKET HAMPERS -->
+  <section style="padding:7rem 3.5rem; background:var(--cream);">
+    <div style="max-width:1200px; margin:0 auto;">
+
+      <div style="text-align:center; max-width:560px; margin:0 auto 4rem;">
+        <span class="section-label reveal">Paket Tersedia</span>
+        <h2 class="section-title reveal">Pilihan <em>hampers</em> siap pesan</h2>
+        <p class="section-desc reveal" style="margin-top:0.8rem;">Semua paket bisa dikustomisasi isi dan kemasannya. Tersedia untuk acara pribadi maupun korporat.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.5rem;">
+
+        <div style="background:var(--cream-warm); padding:0; overflow:hidden; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 50px rgba(44,24,16,0.18)'" onmouseout="this.style.transform='';this.style.boxShadow=''" class="reveal">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=85" alt="Hampers Mini" style="width:100%;height:200px;object-fit:cover;" />
+          <div style="padding:1.8rem;">
+            <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:0.4rem;">Paket Starter</div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--choco);margin-bottom:0.5rem;">Mini Gift Box</div>
+            <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin-bottom:1.2rem;font-weight:300;">1 loyang brownies + 6 cookies pilihan + kartu ucapan. Dikemas dalam box kraft premium.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--amber);">Rp 125.000</div>
+              <button class="btn-order-mini" onclick="pesanProduk('Mini Gift Box')">Pilih Paket</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--choco-2); padding:0; overflow:hidden; transition:transform 0.3s,box-shadow 0.3s; position:relative;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 50px rgba(44,24,16,0.3)'" onmouseout="this.style.transform='';this.style.boxShadow=''" class="reveal">
+          <div style="position:absolute;top:14px;left:14px;background:var(--brick);color:#fff;font-size:0.6rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.65rem;z-index:1;">Paling Laris</div>
+          <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=600&q=85" alt="Hampers Premium" style="width:100%;height:200px;object-fit:cover;filter:brightness(0.85);" />
+          <div style="padding:1.8rem;">
+            <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:0.4rem;">Paket Premium</div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--cream);margin-bottom:0.5rem;">Luxury Hampers Box</div>
+            <p style="font-size:0.85rem;color:rgba(253,248,242,0.5);line-height:1.7;margin-bottom:1.2rem;font-weight:300;">1 cheesecake + 1 loyang brownies + cookies tin + roti artisan. Box kayu premium + pita satin.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--amber-light);">Rp 285.000</div>
+              <button class="btn-pesan" onclick="pesanProduk('Luxury Hampers Box')">Pilih Paket</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--cream-warm); padding:0; overflow:hidden; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 50px rgba(44,24,16,0.18)'" onmouseout="this.style.transform='';this.style.boxShadow=''" class="reveal">
+          <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600&q=85" alt="Corporate Hampers" style="width:100%;height:200px;object-fit:cover;" />
+          <div style="padding:1.8rem;">
+            <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:0.4rem;">Paket Korporat</div>
+            <div style="font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;color:var(--choco);margin-bottom:0.5rem;">Corporate Gift Pack</div>
+            <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;margin-bottom:1.2rem;font-weight:300;">Pemesanan min. 10 paket. Bisa custom branding logo perusahaan. Harga mulai negosisasi quantity.</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--amber);">Hubungi Kami</div>
+              <button class="btn-order-mini" onclick="pesanProduk('Corporate Gift Pack')">Diskusi</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACARA YANG DILAYANI -->
+  <section style="padding:5rem 3.5rem; background:var(--cream-warm);">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:3rem;">
+        <span class="section-label reveal">Acara yang Kami Layani</span>
+        <h2 class="section-title reveal">Untuk setiap <em>momen berharga</em></h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1px; background:rgba(200,129,58,0.1);">
+        <div style="background:var(--cream-warm);padding:2.2rem 1.8rem;text-align:center;transition:background 0.3s;" onmouseover="this.style.background='var(--butter)'" onmouseout="this.style.background='var(--cream-warm)'" class="reveal">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem;">🕌</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--choco);margin-bottom:0.4rem;">Lebaran & Hari Raya</div>
+          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.65;font-weight:300;">Hampers dan parcel kue kering spesial untuk dibagikan ke keluarga dan kolega.</p>
+        </div>
+        <div style="background:var(--cream-warm);padding:2.2rem 1.8rem;text-align:center;transition:background 0.3s;" onmouseover="this.style.background='var(--butter)'" onmouseout="this.style.background='var(--cream-warm)'" class="reveal">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem;">🎂</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--choco);margin-bottom:0.4rem;">Ulang Tahun</div>
+          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.65;font-weight:300;">Kue ulang tahun custom dengan dekorasi dan rasa pilihan. Bisa dengan lilin dan tulisan.</p>
+        </div>
+        <div style="background:var(--cream-warm);padding:2.2rem 1.8rem;text-align:center;transition:background 0.3s;" onmouseover="this.style.background='var(--butter)'" onmouseout="this.style.background='var(--cream-warm)'" class="reveal">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem;">💍</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--choco);margin-bottom:0.4rem;">Pernikahan</div>
+          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.65;font-weight:300;">Wedding cake, souvenir kue, dan hampers tamu undangan dengan kemasan elegan.</p>
+        </div>
+        <div style="background:var(--cream-warm);padding:2.2rem 1.8rem;text-align:center;transition:background 0.3s;" onmouseover="this.style.background='var(--butter)'" onmouseout="this.style.background='var(--cream-warm)'" class="reveal">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem;">💼</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--choco);margin-bottom:0.4rem;">Gathering Kantor</div>
+          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.65;font-weight:300;">Snack box dan corporate hampers untuk meeting, seminar, dan acara perusahaan.</p>
+        </div>
+        <div style="background:var(--cream-warm);padding:2.2rem 1.8rem;text-align:center;transition:background 0.3s;" onmouseover="this.style.background='var(--butter)'" onmouseout="this.style.background='var(--cream-warm)'" class="reveal">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem;">👶</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--choco);margin-bottom:0.4rem;">Baptis & Syukuran</div>
+          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.65;font-weight:300;">Kue dan snack manis untuk syukuran kelahiran, baptis, dan momen perayaan keluarga.</p>
+        </div>
+        <div style="background:var(--cream-warm);padding:2.2rem 1.8rem;text-align:center;transition:background 0.3s;" onmouseover="this.style.background='var(--butter)'" onmouseout="this.style.background='var(--cream-warm)'" class="reveal">
+          <div style="font-size:2.5rem;margin-bottom:0.8rem;">🎁</div>
+          <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--choco);margin-bottom:0.4rem;">Hadiah Personal</div>
+          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.65;font-weight:300;">Parcel pribadi untuk orang-orang tersayang. Bisa request kartu ucapan tulisan tangan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM ORDER CUSTOM -->
+  <section class="custom-section">
+    <div class="custom-inner">
+
+      <!-- LEFT: Info -->
+      <div>
+        <span class="section-label reveal" style="display:block;margin-bottom:0.8rem;">Informasi Pemesanan</span>
+        <h2 class="section-title reveal" style="font-size:2rem;margin-bottom:2rem;">Cara <em>pesan</em> custom</h2>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">📋 Alur Pemesanan</span>
+          <div class="ci-value">
+            1. Isi form di samping atau hubungi via WA<br>
+            2. Konsultasi rasa, ukuran, dan kemasan<br>
+            3. Konfirmasi harga dan DP 50%<br>
+            4. Produk dikerjakan H-1 atau sesuai jadwal<br>
+            5. Pickup / pengiriman sesuai kesepakatan
+          </div>
+        </div>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">⏰ Jam Operasional</span>
+          <table class="hours-table">
+            <tbody>
+              <tr id="row-weekday">
+                <td>Senin – Sabtu</td>
+                <td>07.00 – 20.00</td>
+              </tr>
+              <tr id="row-weekend">
+                <td>Minggu</td>
+                <td>08.00 – 17.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.77rem;color:var(--text-light);margin-top:0.7rem;font-weight:300;font-style:italic;">* Custom order minimal H-2 sebelum tanggal pengambilan.</p>
+        </div>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">📞 Hubungi Kami</span>
+          <div class="ci-value">
+            WhatsApp: <strong style="color:var(--amber);">+62 813-5678-9012</strong><br>
+            Instagram: <strong style="color:var(--amber);">@dapurrempah.id</strong><br>
+            <span style="font-size:0.78rem;color:var(--text-light);">Respons dalam 2 jam saat jam buka</span>
+          </div>
+        </div>
+
+        <div class="custom-info-card reveal">
+          <span class="ci-label">📍 Lokasi Toko</span>
+          <div class="ci-value">
+            Jl. Rempah Manis No. 12<br>
+            Permata Balaraja, Kab. Tangerang<br>
+            Banten 15660
+          </div>
+        </div>
+
+        <div class="map-box reveal">
+          🗺️
+          <p>Jl. Rempah Manis No. 12, Permata Balaraja, Tangerang</p>
+          <a href="https://maps.google.com" target="_blank" class="btn-primary" style="display:inline-flex;margin-top:1.3rem;font-size:0.72rem;">📍 Buka di Google Maps</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div>
+        <div class="order-form-box reveal">
+          <div class="form-title-main">Form Custom Order</div>
+          <p class="form-subtitle-small">Ceritakan pesananmu selengkap mungkin — kami akan membalasnya dalam 2 jam saat jam operasional. 🍫</p>
+
+          <div id="customForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="namaCustomer">Nama Kamu</label>
+                <input type="text" id="namaCustomer" class="form-input" placeholder="Nama lengkap" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="noWA">Nomor WhatsApp</label>
+                <input type="tel" id="noWA" class="form-input" placeholder="+62 8xx-xxxx-xxxx" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="jenisOrder">Jenis Pesanan</label>
+              <select id="jenisOrder" class="form-select">
+                <option value="">Pilih jenis pesanan...</option>
+                <option value="brownies">🍫 Brownies Custom</option>
+                <option value="cake">🎂 Cake / Kue Custom</option>
+                <option value="hampers">🎁 Hampers / Parcel</option>
+                <option value="roti">🍞 Roti / Bread Custom</option>
+                <option value="cookies">🍪 Cookies Custom</option>
+                <option value="pernikahan">💍 Kue Pernikahan</option>
+                <option value="corporate">💼 Corporate / Bulk Order</option>
+                <option value="other">💬 Lainnya</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="tanggalAmbil">Tanggal Dibutuhkan</label>
+                <input type="date" id="tanggalAmbil" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="jumlah">Jumlah / Quantity</label>
+                <input type="text" id="jumlah" class="form-input" placeholder="cth: 2 loyang, 50 pcs" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="anggaran">Estimasi Anggaran</label>
+              <select id="anggaran" class="form-select">
+                <option value="">Pilih estimasi anggaran...</option>
+                <option>Di bawah Rp 100.000</option>
+                <option>Rp 100.000 – 250.000</option>
+                <option>Rp 250.000 – 500.000</option>
+                <option>Rp 500.000 – 1.000.000</option>
+                <option>Di atas Rp 1.000.000</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="detailOrder">Detail Pesanan</label>
+              <textarea id="detailOrder" class="form-textarea" placeholder="Ceritakan detailnya: rasa yang diinginkan, ukuran, tema dekorasi, tulisan di kue, jenis kemasan, dll. Semakin detail semakin bagus!"></textarea>
+            </div>
+
+            <button class="form-submit" id="submitCustom" onclick="handleCustomOrder()">
+              Kirim Permintaan Custom Order 🍫
+            </button>
+
+            <p style="font-size:0.72rem;color:var(--text-light);text-align:center;margin-top:1rem;font-weight:300;">
+              Kami akan menghubungimu via WhatsApp untuk konfirmasi dan diskusi lebih lanjut.
+            </p>
+          </div>
+
+          <!-- Success -->
+          <div class="form-success" id="customSuccess">
+            <div style="font-size:3rem;margin-bottom:1rem;">🍰</div>
+            <h3 style="font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;color:var(--choco);margin-bottom:0.8rem;">Pesananmu Diterima!</h3>
+            <p style="font-size:0.92rem;color:var(--text-muted);line-height:1.8;font-weight:300;">
+              Terima kasih sudah mempercayakan pesananmu pada Dapur Rempah. 🤎<br><br>
+              Tim kami akan menghubungi kamu via WhatsApp dalam waktu 2 jam saat jam operasional untuk berdiskusi detail pesanan.
+            </p>
+            <button onclick="resetCustomForm()" class="btn-outline-dark" style="margin-top:2rem;display:inline-flex;">Buat Pesanan Lain</button>
+          </div>
+        </div>
+
+        <!-- FAQ Custom -->
+        <div style="margin-top:1.5rem;background:var(--cream-warm);padding:2.5rem;" class="reveal">
+          <span class="section-label" style="margin-bottom:1.5rem;display:block;">FAQ Custom Order</span>
+          <div id="faqContainer"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function handleCustomOrder() {
+      const nama   = document.getElementById('namaCustomer').value.trim();
+      const wa     = document.getElementById('noWA').value.trim();
+      const detail = document.getElementById('detailOrder').value.trim();
+      if (!nama || !wa || !detail) {
+        alert('Mohon isi nama, nomor WhatsApp, dan detail pesananmu ya! 🍫');
+        return;
+      }
+      const btn = document.getElementById('submitCustom');
+      btn.textContent = 'Mengirim...';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('customForm').style.display = 'none';
+        document.getElementById('customSuccess').style.display = 'block';
+      }, 1000);
+    }
+
+    function resetCustomForm() {
+      ['namaCustomer','noWA','jumlah','detailOrder','tanggalAmbil'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      ['jenisOrder','anggaran'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('customForm').style.display = 'block';
+      document.getElementById('customSuccess').style.display = 'none';
+      const btn = document.getElementById('submitCustom');
+      btn.textContent = 'Kirim Permintaan Custom Order 🍫';
+      btn.disabled = false;
+    }
+
+    const faqs = [
+      { q: '🍫 Berapa minimal pesanan brownies custom?', a: 'Minimal 1 loyang 20×20 untuk brownies. Untuk pemesanan dalam jumlah banyak (di atas 10 loyang) tersedia harga khusus bulk order.' },
+      { q: '📅 Berapa hari sebelumnya harus pesan?', a: 'Untuk custom order, minimal H-2 sebelum tanggal dibutuhkan. Untuk pesanan besar atau pernikahan, kami sarankan minimal 2 minggu sebelumnya.' },
+      { q: '🚚 Apakah tersedia layanan pengiriman?', a: 'Ya, kami melayani pengiriman area Balaraja dan sekitarnya (radius ±20km). Untuk area di luar itu, produk bisa dikirim via kurir dengan kemasan khusus.' },
+      { q: '💰 Berapa DP yang diperlukan?', a: 'DP 50% dari total harga pesanan dibayar setelah harga disepakati. Pelunasan bisa dilakukan saat pickup atau sebelum pengiriman.' },
+      { q: '🎨 Bisa request dekorasi khusus?', a: 'Tentu! Kami bisa custom tulisan, tema warna, topping, dan packaging sesuai keinginanmu. Semakin detail request-mu, semakin presisi hasilnya.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('faqContainer');
+      faqs.forEach((faq, i) => {
+        const el = document.createElement('div');
+        el.style.borderBottom = '1px solid rgba(200,129,58,0.15)';
+        el.innerHTML = `
+          <button onclick="toggleFaq(${i})" style="width:100%;text-align:left;padding:1.1rem 0;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'Outfit',sans-serif;">
+            <span style="font-size:0.88rem;font-weight:600;color:var(--choco);">${faq.q}</span>
+            <span id="faq-icon-${i}" style="color:var(--amber);font-size:1.1rem;flex-shrink:0;transition:transform 0.3s;">+</span>
+          </button>
+          <div id="faq-body-${i}" style="max-height:0;overflow:hidden;transition:max-height 0.4s ease;">
+            <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.78;padding-bottom:1.1rem;font-weight:300;">${faq.a}</p>
+          </div>
+        `;
+        container.appendChild(el);
+      });
+
+      // Highlight today
+      const day = new Date().getDay();
+      const wdRow = document.getElementById('row-weekday');
+      const weRow = document.getElementById('row-weekend');
+      if (day >= 1 && day <= 6 && wdRow) wdRow.classList.add('today');
+      else if (day === 0 && weRow) weRow.classList.add('today');
+
+      // Min date
+      const today = new Date().toISOString().split('T')[0];
+      const dateEl = document.getElementById('tanggalAmbil');
+      if (dateEl) dateEl.min = today;
+    });
+
+    function toggleFaq(i) {
+      const body = document.getElementById(`faq-body-${i}`);
+      const icon = document.getElementById(`faq-icon-${i}`);
+      const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+      faqs.forEach((_, j) => {
+        document.getElementById(`faq-body-${j}`).style.maxHeight = '0px';
+        document.getElementById(`faq-icon-${j}`).textContent = '+';
+      });
+      if (!isOpen) { body.style.maxHeight = body.scrollHeight + 'px'; icon.textContent = '−'; }
+    }
+  </script>
+</body>
+</html>

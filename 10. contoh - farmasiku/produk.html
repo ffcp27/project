@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk & Obat — Farmasiku</title>
+  <meta name="description" content="Katalog lengkap produk Farmasiku: obat bebas, suplemen vitamin, alat kesehatan, skincare, dan produk bayi. Semua resmi BPOM."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="topbar-placeholder"></div>
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Produk</span>
+      </div>
+      <span class="sec-label">Katalog Produk</span>
+      <h1 class="sec-title">Produk <em>Lengkap</em></h1>
+      <p class="sec-desc">5.000+ produk obat dan kesehatan — semua asli, semua terdaftar BPOM, semua terjamin kualitasnya.</p>
+    </div>
+  </div>
+
+  <!-- PRODUK FULL -->
+  <section class="produk-full-section">
+    <div class="produk-full-inner">
+
+      <!-- Toolbar -->
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-bottom:0.5rem;">
+        <h2 class="sec-title" style="font-size:1.5rem;">
+          Menampilkan <span id="prodCount">16</span> produk
+        </h2>
+        <select id="sortSelect" onchange="sortProds()" style="padding:0.5rem 1rem;border-radius:50px;border:1.5px solid rgba(13,115,119,0.18);font-family:inherit;font-size:0.85rem;color:var(--text-body);background:white;cursor:pointer;appearance:none;">
+          <option value="default">Urutkan: Default</option>
+          <option value="low">Harga: Termurah</option>
+          <option value="high">Harga: Termahal</option>
+          <option value="name">Nama: A–Z</option>
+        </select>
+      </div>
+
+      <div class="produk-sidebar-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar-box">
+          <div class="sidebar-section">
+            <span class="sidebar-sec-title">Kategori</span>
+            <div class="sidebar-options">
+              <button class="sidebar-opt active" data-cat="all" onclick="filterProds('all', this)">
+                💊 Semua Produk <span class="sidebar-opt-count">16</span>
+              </button>
+              <button class="sidebar-opt" data-cat="obat" onclick="filterProds('obat', this)">
+                🏥 Obat Bebas <span class="sidebar-opt-count">5</span>
+              </button>
+              <button class="sidebar-opt" data-cat="vitamin" onclick="filterProds('vitamin', this)">
+                🌿 Vitamin & Suplemen <span class="sidebar-opt-count">4</span>
+              </button>
+              <button class="sidebar-opt" data-cat="alkes" onclick="filterProds('alkes', this)">
+                🩺 Alat Kesehatan <span class="sidebar-opt-count">3</span>
+              </button>
+              <button class="sidebar-opt" data-cat="skincare" onclick="filterProds('skincare', this)">
+                ✨ Skincare & Perawatan <span class="sidebar-opt-count">2</span>
+              </button>
+              <button class="sidebar-opt" data-cat="bayi" onclick="filterProds('bayi', this)">
+                👶 Produk Bayi & Ibu <span class="sidebar-opt-count">2</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <span class="sidebar-sec-title">Filter</span>
+            <div class="sidebar-options">
+              <button class="sidebar-opt" onclick="showToast('Filter: Obat Generik')">Obat Generik</button>
+              <button class="sidebar-opt" onclick="showToast('Filter: Tersedia BPJS')">Tersedia BPJS</button>
+              <button class="sidebar-opt" onclick="showToast('Filter: Produk Diskon')">Produk Diskon</button>
+              <button class="sidebar-opt" onclick="showToast('Filter: Stok Tersedia')">Stok Tersedia</button>
+            </div>
+          </div>
+
+          <div class="sidebar-section">
+            <span class="sidebar-sec-title">Merek Populer</span>
+            <div class="sidebar-options">
+              <button class="sidebar-opt" onclick="showToast('Filter: Kimia Farma')">Kimia Farma</button>
+              <button class="sidebar-opt" onclick="showToast('Filter: Kalbe Farma')">Kalbe Farma</button>
+              <button class="sidebar-opt" onclick="showToast('Filter: Sanbe Farma')">Sanbe Farma</button>
+              <button class="sidebar-opt" onclick="showToast('Filter: Sido Muncul')">Sido Muncul</button>
+              <button class="sidebar-opt" onclick="showToast('Filter: Combiphar')">Combiphar</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <div class="produk-grid" id="prodGrid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr));">
+
+          <!-- OBAT -->
+          <div class="produk-card visible" data-cat="obat" data-price="3500" data-name="Paracetamol">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80" alt="Paracetamol"/>
+              <span class="produk-badge badge-teal">Terlaris</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Paracetamol')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Obat Bebas</div>
+              <div class="produk-name">Paracetamol 500mg</div>
+              <div class="produk-sub">Strip 10 tablet · Generik</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 3.500</div>
+                <button class="btn-add-cart" onclick="addToCart('Paracetamol 500mg')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="obat" data-price="5500" data-name="Ibuprofen">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=500&q=80" alt="Ibuprofen"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Ibuprofen')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Obat Bebas</div>
+              <div class="produk-name">Ibuprofen 400mg</div>
+              <div class="produk-sub">Strip 10 tablet · Generik</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 5.500</div>
+                <button class="btn-add-cart" onclick="addToCart('Ibuprofen 400mg')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="obat" data-price="12500" data-name="Antasida">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?w=500&q=80" alt="Antasida"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Antasida')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Obat Bebas</div>
+              <div class="produk-name">Antasida DOEN</div>
+              <div class="produk-sub">Botol 100 tablet · Generik</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 12.500</div>
+                <button class="btn-add-cart" onclick="addToCart('Antasida DOEN')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="obat" data-price="18000" data-name="OBH Combi">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=500&q=80" alt="Obat batuk"/>
+              <span class="produk-badge badge-green">Populer</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'OBH Combi')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Obat Bebas</div>
+              <div class="produk-name">OBH Combi Batuk Sirup</div>
+              <div class="produk-sub">Botol 100ml · Rasa Jeruk Nipis</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 18.000</div>
+                <button class="btn-add-cart" onclick="addToCart('OBH Combi')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="obat" data-price="25000" data-name="Betadine">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80" alt="Betadine"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Betadine')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Antiseptik</div>
+              <div class="produk-name">Betadine Solution 30ml</div>
+              <div class="produk-sub">Antiseptik luka & kulit</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 25.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Betadine 30ml')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- VITAMIN -->
+          <div class="produk-card visible" data-cat="vitamin" data-price="28000" data-name="Vitamin C">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=500&q=80" alt="Vitamin C"/>
+              <span class="produk-badge badge-green">Hot</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Vitamin C')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Vitamin</div>
+              <div class="produk-name">Vitamin C 1000mg Effervescent</div>
+              <div class="produk-sub">Tube 10 tablet · Rasa jeruk</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 28.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Vitamin C 1000mg')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="vitamin" data-price="67000" data-name="Supravit">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=500&q=80" alt="Multivitamin"/>
+              <span class="produk-badge badge-amber">Promo</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Supravit')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Multivitamin</div>
+              <div class="produk-name">Supravit Plus 100 Kaplet</div>
+              <div class="produk-sub">Botol 100 kaplet</div>
+              <div class="produk-footer">
+                <div class="produk-price">
+                  <span class="old">Rp 85.000</span>Rp 67.000
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Supravit Plus')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="vitamin" data-price="95000" data-name="Omega-3">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=500&q=80" alt="Omega-3"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Omega-3')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Suplemen</div>
+              <div class="produk-name">Omega-3 Fish Oil 1000mg</div>
+              <div class="produk-sub">Botol 60 softgel</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 95.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Omega-3 Fish Oil')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="vitamin" data-price="145000" data-name="Probiotik">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?w=500&q=80" alt="Probiotik"/>
+              <span class="produk-badge badge-teal">Baru</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Probiotik')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Suplemen Pencernaan</div>
+              <div class="produk-name">Lacto-B Probiotik Anak</div>
+              <div class="produk-sub">Sachet 30 · Prebiotik + Probiotik</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 145.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Lacto-B Probiotik')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ALKES -->
+          <div class="produk-card visible" data-cat="alkes" data-price="125000" data-name="Termometer">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1622253694238-3b22139576c6?w=500&q=80" alt="Termometer"/>
+              <span class="produk-badge badge-teal">Baru</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Termometer')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Alat Kesehatan</div>
+              <div class="produk-name">Termometer Digital Infrared</div>
+              <div class="produk-sub">Non-contact · Akurasi ±0.2°C</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 125.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Termometer Infrared')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="alkes" data-price="285000" data-name="Tensimeter">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&q=80" alt="Tensimeter"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Tensimeter')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Alat Kesehatan</div>
+              <div class="produk-name">Tensimeter Digital Otomatis</div>
+              <div class="produk-sub">Lengan atas · Memori 90 data</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 285.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Tensimeter Digital')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="alkes" data-price="450000" data-name="Glucometer">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&q=80" alt="Glucometer"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Glucometer')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Alat Kesehatan</div>
+              <div class="produk-name">Glucometer Digital + Stik</div>
+              <div class="produk-sub">Set lengkap · 50 stik test</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 450.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Glucometer Set')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SKINCARE -->
+          <div class="produk-card visible" data-cat="skincare" data-price="72000" data-name="Sunscreen">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&q=80" alt="Sunscreen"/>
+              <span class="produk-badge badge-promo">Sale</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Sunscreen SPF 50')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Skincare</div>
+              <div class="produk-name">Sunscreen SPF 50+ PA++++</div>
+              <div class="produk-sub">50ml · Water resistant</div>
+              <div class="produk-footer">
+                <div class="produk-price">
+                  <span class="old">Rp 95.000</span>Rp 72.000
+                </div>
+                <button class="btn-add-cart" onclick="addToCart('Sunscreen SPF 50+')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="skincare" data-price="85000" data-name="Pelembab">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=80" alt="Moisturizer"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Pelembab Wajah')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Skincare</div>
+              <div class="produk-name">Pelembab Wajah Urea 10%</div>
+              <div class="produk-sub">75ml · Kulit kering & sensitif</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 85.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Pelembab Urea 10%')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- BAYI -->
+          <div class="produk-card visible" data-cat="bayi" data-price="48000" data-name="Baby Oil">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=500&q=80" alt="Baby oil"/>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Baby Oil')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Produk Bayi</div>
+              <div class="produk-name">Baby Oil Gentle Care 200ml</div>
+              <div class="produk-sub">Hypoallergenic · Bebas paraben</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 48.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Baby Oil Gentle Care')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="produk-card visible" data-cat="bayi" data-price="135000" data-name="Vitamin Ibu">
+            <div class="produk-img-wrap">
+              <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&q=80" alt="Vitamin Ibu Hamil"/>
+              <span class="produk-badge badge-green">Rekomendasi</span>
+              <button class="produk-wishlist" onclick="addWishlist(this,'Vitamin Ibu Hamil')" data-liked="false">🤍</button>
+            </div>
+            <div class="produk-body">
+              <div class="produk-cat">Ibu & Kehamilan</div>
+              <div class="produk-name">Prenatal Vitamins Lengkap</div>
+              <div class="produk-sub">Botol 60 tablet · Asam folat + DHA</div>
+              <div class="produk-footer">
+                <div class="produk-price">Rp 135.000</div>
+                <button class="btn-add-cart" onclick="addToCart('Prenatal Vitamins')">+</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-img">
+        <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?w=800&q=80" alt="Obat" />
+      </div>
+      <div>
+        <span class="cta-label">Tidak menemukan yang dicari?</span>
+        <h2 class="cta-title">Tanyakan langsung ke <em>apoteker kami</em></h2>
+        <p class="cta-desc">Kami menyediakan layanan konsultasi dan pencarian produk khusus. Hubungi kami via WhatsApp atau kunjungi langsung apotek kami.</p>
+        <a href="konsultasi.html" class="btn-primary">💬 Hubungi Apoteker</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function filterProds(cat, btn) {
+      document.querySelectorAll('.sidebar-opt').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cards = document.querySelectorAll('#prodGrid .produk-card');
+      let count = 0;
+      cards.forEach(card => {
+        const show = cat === 'all' || card.dataset.cat === cat;
+        card.classList.toggle('visible', show);
+        if (show) count++;
+      });
+      document.getElementById('prodCount').textContent = count;
+    }
+
+    function sortProds() {
+      const val = document.getElementById('sortSelect').value;
+      const grid = document.getElementById('prodGrid');
+      const cards = Array.from(grid.querySelectorAll('.produk-card'));
+      cards.sort((a, b) => {
+        if (val === 'low')  return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+        if (val === 'high') return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+        if (val === 'name') return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+        return 0;
+      });
+      cards.forEach(c => grid.appendChild(c));
+    }
+  </script>
+</body>
+</html>
