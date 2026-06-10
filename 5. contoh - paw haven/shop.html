@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk — Paw Haven</title>
+  <meta name="description" content="Belanja produk hewan peliharaan terlengkap di Paw Haven: makanan, aksesori, kandang, vitamin, mainan, dan lebih banyak lagi." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?w=1600&q=80" alt="Pet products" class="page-hero-bg" />
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-inner">
+      <span class="section-label">Katalog Produk</span>
+      <h1 class="section-title">Semua ada di <em>Paw Haven</em></h1>
+      <p class="section-desc">Produk premium pilihan untuk anjing, kucing, dan hewan peliharaan lainnya. Kualitas terjamin, harga bersahabat.</p>
+    </div>
+  </section>
+
+  <!-- SHOP SECTION -->
+  <section class="shop-section">
+    <div class="shop-inner">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <h2 class="section-title" style="font-size:1.6rem;">
+          Menampilkan <span id="productCount">24</span> produk
+        </h2>
+        <select id="sortSelect" onchange="sortProducts()" style="padding:0.5rem 1rem; border-radius:50px; border:1.5px solid var(--tan); font-family:inherit; font-size:0.85rem; color:var(--text-body); background:var(--cream); cursor:pointer;">
+          <option value="default">Urutan Default</option>
+          <option value="low">Harga: Termurah</option>
+          <option value="high">Harga: Termahal</option>
+        </select>
+      </div>
+
+      <div class="shop-sidebar-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="shop-sidebar">
+          <div class="sidebar-group">
+            <span class="sidebar-title">Kategori</span>
+            <div class="sidebar-options">
+              <button class="sidebar-opt active" data-cat="all" onclick="filterShop('all', this)">
+                🐾 Semua Produk <span class="count">24</span>
+              </button>
+              <button class="sidebar-opt" data-cat="dog" onclick="filterShop('dog', this)">
+                🐶 Anjing <span class="count">10</span>
+              </button>
+              <button class="sidebar-opt" data-cat="cat" onclick="filterShop('cat', this)">
+                🐱 Kucing <span class="count">8</span>
+              </button>
+              <button class="sidebar-opt" data-cat="aksesoris" onclick="filterShop('aksesoris', this)">
+                ✨ Aksesori <span class="count">4</span>
+              </button>
+              <button class="sidebar-opt" data-cat="vitamin" onclick="filterShop('vitamin', this)">
+                💊 Vitamin & Suplemen <span class="count">2</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="sidebar-group">
+            <span class="sidebar-title">Hewan Peliharaan</span>
+            <div class="sidebar-options">
+              <button class="sidebar-opt" data-pet="dog" onclick="filterByPet('dog', this)">🐶 Anjing</button>
+              <button class="sidebar-opt" data-pet="cat" onclick="filterByPet('cat', this)">🐱 Kucing</button>
+              <button class="sidebar-opt" data-pet="bird" onclick="filterByPet('bird', this)">🐦 Burung</button>
+              <button class="sidebar-opt" data-pet="rabbit" onclick="filterByPet('rabbit', this)">🐰 Kelinci</button>
+            </div>
+          </div>
+
+          <div class="sidebar-group">
+            <span class="sidebar-title">Merek Populer</span>
+            <div class="sidebar-options">
+              <button class="sidebar-opt" onclick="showToast('Filter merek aktif')">Royal Canin</button>
+              <button class="sidebar-opt" onclick="showToast('Filter merek aktif')">Whiskas</button>
+              <button class="sidebar-opt" onclick="showToast('Filter merek aktif')">Kong</button>
+              <button class="sidebar-opt" onclick="showToast('Filter merek aktif')">Vitakraft</button>
+              <button class="sidebar-opt" onclick="showToast('Filter merek aktif')">Catit</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <div class="shop-grid" id="shopGrid">
+
+          <!-- DOG PRODUCTS -->
+          <div class="product-card visible" data-cat="dog" data-price="285000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=500&q=80" alt="Dog food" />
+              <span class="product-badge badge-hot">🔥 Terlaris</span>
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Royal Canin Medium')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐶 Makanan Anjing</div>
+              <div class="product-name">Royal Canin Medium Adult 4kg</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 285.000</div>
+                <button class="btn-cart" onclick="addToCart('Royal Canin Medium')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="dog" data-price="145000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?w=500&q=80" alt="Dog toy" />
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Kong Classic')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐶 Mainan Anjing</div>
+              <div class="product-name">Kong Classic Dog Toy Medium</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 145.000</div>
+                <button class="btn-cart" onclick="addToCart('Kong Classic')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="dog" data-price="320000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500&q=80" alt="Dog harness" />
+              <span class="product-badge badge-new">✨ Baru</span>
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Harness Premium')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐶 Aksesori Anjing</div>
+              <div class="product-name">Harness Premium Anti-Tarik L</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 320.000</div>
+                <button class="btn-cart" onclick="addToCart('Harness Premium')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="dog" data-price="185000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=500&q=80" alt="Dog snack" />
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Dental Chew')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐶 Snack Anjing</div>
+              <div class="product-name">Pedigree Dentastix Daily Oral Care</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 185.000</div>
+                <button class="btn-cart" onclick="addToCart('Dentastix')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="dog" data-price="420000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=500&q=80" alt="Dog bed" />
+              <span class="product-badge badge-sale">💸 Diskon 15%</span>
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Ortho Dog Bed')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐶 Tempat Tidur</div>
+              <div class="product-name">Orthopedic Dog Bed XL Memory Foam</div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="old-price">Rp 490.000</span>
+                  Rp 420.000
+                </div>
+                <button class="btn-cart" onclick="addToCart('Ortho Dog Bed')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CAT PRODUCTS -->
+          <div class="product-card visible" data-cat="cat" data-price="95000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&q=80" alt="Cat food" />
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Whiskas Tuna')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐱 Makanan Kucing</div>
+              <div class="product-name">Whiskas Tuna Pouch 85g (12 pcs)</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 95.000</div>
+                <button class="btn-cart" onclick="addToCart('Whiskas Tuna')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="cat" data-price="380000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&q=80" alt="Cat tree" />
+              <span class="product-badge badge-hot">🔥 Terlaris</span>
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Cat Tree')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐱 Furniture Kucing</div>
+              <div class="product-name">Cat Tree Scratcher 3 Tingkat</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 380.000</div>
+                <button class="btn-cart" onclick="addToCart('Cat Tree Scratcher')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="cat" data-price="125000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1583338917451-face2751d8d5?w=500&q=80" alt="Cat litter" />
+              <span class="product-badge badge-new">✨ Baru</span>
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Pasir Kucing')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐱 Sanitasi</div>
+              <div class="product-name">Catit Clumping Litter 10L Lavender</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 125.000</div>
+                <button class="btn-cart" onclick="addToCart('Catit Litter')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="cat" data-price="72000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=500&q=80" alt="Cat toy" />
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Interactive Toy')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">🐱 Mainan Kucing</div>
+              <div class="product-name">Interactive Feather Wand Toy</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 72.000</div>
+                <button class="btn-cart" onclick="addToCart('Feather Wand')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- AKSESORIS -->
+          <div class="product-card visible" data-cat="aksesoris" data-price="199000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?w=500&q=80" alt="Pet bed" />
+              <span class="product-badge badge-sale">💸 Diskon 20%</span>
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Luxury Pet Bed')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">✨ Tempat Tidur</div>
+              <div class="product-name">Luxury Pet Bed Anti-Slip M</div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="old-price">Rp 250.000</span>
+                  Rp 199.000
+                </div>
+                <button class="btn-cart" onclick="addToCart('Luxury Pet Bed')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="aksesoris" data-price="215000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=500&q=80" alt="Carrier" />
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Soft Carrier')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">✨ Tas & Carrier</div>
+              <div class="product-name">Soft Carrier Bag Portable S/M</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 215.000</div>
+                <button class="btn-cart" onclick="addToCart('Soft Carrier')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- VITAMIN -->
+          <div class="product-card visible" data-cat="vitamin" data-price="85000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1550640083-c44c5055a5d7?w=500&q=80" alt="Pet vitamin" />
+              <span class="product-badge badge-new">✨ Baru</span>
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Omega 3 Suplemen')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">💊 Suplemen</div>
+              <div class="product-name">Omega 3 Fish Oil Supplement 120 caps</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 85.000</div>
+                <button class="btn-cart" onclick="addToCart('Omega 3 Fish Oil')">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card visible" data-cat="vitamin" data-price="110000">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500&q=80" alt="Pet multivitamin" />
+              <button class="product-wishlist" onclick="toggleWishlist(this,'Multivitamin')" data-liked="false">🤍</button>
+            </div>
+            <div class="product-body">
+              <div class="product-category">💊 Vitamin</div>
+              <div class="product-name">Vitakraft Multivitamin Paste 100g</div>
+              <div class="product-footer">
+                <div class="product-price">Rp 110.000</div>
+                <button class="btn-cart" onclick="addToCart('Vitakraft Multivitamin')">+</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <span class="section-label">Tidak menemukan yang kamu cari?</span>
+      <h2>Hubungi kami — kami bisa <em>bantu carikan!</em></h2>
+      <p>Tim Paw Haven siap membantu menemukan produk spesifik untuk kebutuhan hewan peliharaanmu.</p>
+      <a href="contact.html" class="btn-white">💬 Chat dengan Kami</a>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function filterShop(cat, btn) {
+      document.querySelectorAll('.shop-sidebar .sidebar-opt').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cards = document.querySelectorAll('#shopGrid .product-card');
+      let count = 0;
+      cards.forEach(card => {
+        const show = cat === 'all' || card.dataset.cat === cat;
+        card.classList.toggle('visible', show);
+        if (show) count++;
+      });
+      document.getElementById('productCount').textContent = count;
+    }
+
+    function filterByPet(pet, btn) {
+      showToast(`Filter hewan: ${btn.textContent.trim()} 🐾`);
+    }
+
+    function sortProducts() {
+      const val = document.getElementById('sortSelect').value;
+      const grid = document.getElementById('shopGrid');
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      cards.sort((a, b) => {
+        const pA = parseInt(a.dataset.price);
+        const pB = parseInt(b.dataset.price);
+        if (val === 'low')  return pA - pB;
+        if (val === 'high') return pB - pA;
+        return 0;
+      });
+      cards.forEach(c => grid.appendChild(c));
+    }
+  </script>
+</body>
+</html>
